@@ -1,0 +1,758 @@
+[2025-10-05 10:49:11.390986] Skipped sticker message
+[2025-10-05 10:49:20.812249] Skipped sticker message
+[2025-10-05 10:50:01.072337] Skipped sticker message
+[2025-10-05 10:50:14.151003] Skipped sticker message
+[2025-10-05 10:50:14.152167] Skipped sticker message
+[2025-10-05 10:50:28.673995] Skipped sticker message
+[2025-10-05 10:50:40.633284] Skipped sticker message
+[2025-10-05 10:50:54.080272] Skipped sticker message
+[2025-10-05 10:51:07.521196] Skipped sticker message
+[2025-10-05 10:51:32.321341] Skipped sticker message
+[2025-10-05 10:51:32.322399] Skipped sticker message
+[2025-10-05 10:51:55.698945] Skipped sticker message
+[2025-10-05 10:52:04.307245] Skipped sticker message
+[2025-10-05 10:52:13.451943] Skipped sticker message
+[2025-10-05 10:52:13.453428] Skipped sticker message
+[2025-10-05 10:52:13.455071] Skipped sticker message
+[2025-10-05 10:52:32.460171] Skipped sticker message
+[2025-10-05 10:52:57.587151] Skipped sticker message
+[2025-10-05 10:52:57.587799] Skipped sticker message
+[2025-10-05 10:52:57.588461] Skipped sticker message
+[2025-10-05 10:53:25.367071] Skipped sticker message
+[2025-10-05 10:53:48.671405] Skipped sticker message
+[2025-10-05 10:53:48.672183] Skipped sticker message
+[2025-10-05 10:54:09.709052] Skipped sticker message
+[2025-10-05 10:54:09.709634] Skipped sticker message
+[2025-10-05 10:54:33.444114] Skipped sticker message
+[2025-10-05 10:54:33.444959] Skipped sticker message
+[2025-10-05 10:54:45.051878] Skipped sticker message
+[2025-10-05 10:55:06.692522] Skipped sticker message
+[2025-10-05 10:55:06.693181] Skipped sticker message
+[2025-10-05 11:00:31.199924] Skipped sticker message
+[2025-10-05 11:05:45.057136] Skipped sticker message
+[2025-10-05 11:06:07.143670] Skipped sticker message
+[2025-10-05 11:06:28.211197] Skipped sticker message
+[2025-10-05 11:06:53.116962] Skipped sticker message
+[2025-10-05 11:07:14.148803] Skipped sticker message
+[2025-10-05 11:07:14.149820] Skipped sticker message
+[2025-10-05 11:07:39.614979] Skipped sticker message
+[2025-10-05 11:07:39.615835] Skipped sticker message
+[2025-10-05 11:07:54.071096] Skipped sticker message
+[2025-10-05 11:08:24.868004] Skipped sticker message
+[2025-10-05 11:09:10.568510] Skipped sticker message
+[2025-10-05 22:37:50.130990] Skipped sticker message
+[2025-10-05 22:38:02.566067] Skipped sticker message
+[2025-10-05 22:38:16.074231] Skipped sticker message
+[2025-10-05 22:39:01.276540] Skipped sticker message
+[2025-10-05 22:39:27.993324] Skipped sticker message
+[2025-10-05 22:39:55.204823] Skipped sticker message
+[2025-10-05 22:40:18.235983] Skipped sticker message
+[2025-10-05 22:40:32.512955] Skipped sticker message
+[2025-10-05 22:40:43.974429] Skipped sticker message
+[2025-10-05 22:40:54.410768] Skipped sticker message
+[2025-10-05 22:41:07.435631] Skipped sticker message
+[2025-10-05 22:41:31.001875] Skipped sticker message
+[2025-10-06 09:19:36.690719] Skipped duplicate: **UnderGrads Movies Uploaded
+****https://t.me/+H5qyXhRQFG1kZTk1****
+Join Fast, Open For Limited Members and for limited time**
+[2025-10-06 09:19:36.693637] Skipped sticker message
+[2025-10-06 09:19:59.348382] Skipped sticker message
+[2025-10-06 09:19:59.350246] Skipped sticker message
+[2025-10-06 09:20:25.315081] Skipped sticker message
+[2025-10-06 10:21:58.453049] Skipped sticker message
+[2025-10-06 10:22:11.886797] Skipped sticker message
+[2025-10-06 14:18:23.301728] Skipped sticker message
+[2025-10-06 19:40:34.515126] Skipped sticker message
+[2025-10-06 19:40:34.517021] Skipped duplicate: **UnderGrads Movies Uploaded
+****https://t.me/+H5qyXhRQFG1kZTk1****
+Join Fast, Open For Limited Members and for limited time**
+[2025-10-06 19:40:34.518983] Skipped sticker message
+[2025-10-06 19:40:34.520436] Skipped sticker message
+[2025-10-06 19:40:46.946446] Skipped sticker message
+[2025-10-07 09:02:33.681747] Skipped sticker message
+[2025-10-07 09:02:33.688719] Skipped duplicate: **RMG Movie Verse****
+****https://t.me/+SleXpsURI4YxNDRl****
+****Join for All New Movies, Only 400 Members Can Join. So, Join Fast !!!**
+[2025-10-08 11:17:34.631908] Skipped sticker message
+[2025-10-08 11:17:34.634544] Skipped duplicate: **RMG Movie Verse****
+****https://t.me/+SleXpsURI4YxNDRl****
+****Join for All New Movies, Only 400 Members Can Join. So, Join Fast !!!**
+[2025-10-08 11:22:44.785438] Skipped sticker message
+[2025-10-08 11:23:27.622693] Skipped sticker message
+[2025-10-08 11:23:49.549328] Skipped sticker message
+[2025-10-08 11:23:57.825181] Skipped sticker message
+[2025-10-08 11:23:57.827085] Skipped duplicate: **RMG Bollywood ®****
+****https://t.me/+RA41dk6BcMg5ODc1****
+****Join for All New Movies, Only 140 Members Can Join. So, Join Fast !!!**
+[2025-10-08 11:23:57.828742] Skipped sticker message
+[2025-10-08 11:24:20.696322] Skipped sticker message
+[2025-10-08 11:24:20.697879] Skipped sticker message
+[2025-10-08 11:24:40.621926] Skipped sticker message
+[2025-10-08 19:30:05.644190] Skipped sticker message
+[2025-10-08 19:30:36.723865] Skipped sticker message
+[2025-10-08 19:31:14.022295] Skipped sticker message
+[2025-10-08 19:31:14.024184] Skipped duplicate: **RMG Bollywood ®****
+****https://t.me/+RA41dk6BcMg5ODc1****
+****Join for All New Movies, Only 140 Members Can Join. So, Join Fast !!!**
+[2025-10-09 14:29:55.830725] Skipped sticker message
+[2025-10-09 14:29:55.845400] Skipped duplicate: **RMG Bollywood ®****
+****https://t.me/+RA41dk6BcMg5ODc1****
+****Join for All New Movies, Only 140 Members Can Join. So, Join Fast !!!**
+[2025-10-09 14:30:29.659376] Skipped sticker message
+[2025-10-09 14:30:41.802218] Skipped sticker message
+[2025-10-09 14:31:11.137100] Skipped sticker message
+[2025-10-09 14:31:26.650767] Skipped sticker message
+[2025-10-09 14:31:35.385927] Skipped sticker message
+[2025-10-09 14:31:46.294410] Skipped sticker message
+[2025-10-10 03:36:34.622154] Skipped sticker message
+[2025-10-10 03:36:46.006082] Skipped sticker message
+[2025-10-10 03:36:46.007726] Skipped sticker message
+[2025-10-10 03:36:59.792671] Skipped sticker message
+[2025-10-10 03:36:59.796771] Skipped duplicate: **Cine Uploads Movies Recently got copyright ****🎧****🎧****, But Don't You Worry..... I Have Got You Covered. ****😁****😁****
+
+****Join New Channel of Cine Uploads Movies, for lastest content an quality content. ****🙂****
+
+****https://t.me/+GcN5oznPXVoxZTQx****
+****https://t.me/+GcN5oznPXVoxZTQx****
+****https://t.me/+GcN5oznPXVoxZTQx**
+[2025-10-10 03:37:07.885334] Skipped sticker message
+[2025-10-10 03:37:31.414328] Skipped sticker message
+[2025-10-10 03:37:31.416119] Skipped sticker message
+[2025-10-10 03:37:53.128975] Skipped sticker message
+[2025-10-10 03:37:53.130485] Skipped sticker message
+[2025-10-10 03:38:26.443091] Skipped sticker message
+[2025-10-10 14:39:31.245598] Skipped sticker message
+[2025-10-10 14:39:31.262118] Skipped sticker message
+[2025-10-10 14:39:56.142055] Skipped sticker message
+[2025-10-10 14:40:08.731652] Skipped sticker message
+[2025-10-10 14:40:29.118483] Skipped sticker message
+[2025-10-11 08:00:22.781020] Skipped sticker message
+[2025-10-11 08:00:22.783572] Skipped sticker message
+[2025-10-11 08:00:56.614700] Skipped sticker message
+[2025-10-11 08:00:56.616684] Skipped duplicate: **Cine Uploads Movies Recently got copyright ****🎧****🎧****, But Don't You Worry..... I Have Got You Covered. ****😁****😁****
+
+****Join New Channel of Cine Uploads Movies, for lastest content an quality content. ****🙂****
+
+****https://t.me/+GcN5oznPXVoxZTQx****
+****https://t.me/+GcN5oznPXVoxZTQx****
+****https://t.me/+GcN5oznPXVoxZTQx**
+[2025-10-11 08:01:22.421363] Skipped sticker message
+[2025-10-11 12:39:57.807179] Skipped sticker message
+[2025-10-11 12:45:37.331156] Skipped sticker message
+[2025-10-11 12:45:46.081696] Skipped sticker message
+[2025-10-11 12:45:55.242813] Skipped sticker message
+[2025-10-11 12:46:32.140033] Skipped sticker message
+[2025-10-12 13:36:31.341023] Skipped sticker message
+[2025-10-12 13:36:31.344392] Skipped sticker message
+[2025-10-12 13:36:31.346742] Skipped sticker message
+[2025-10-12 13:36:42.009408] Skipped sticker message
+[2025-10-12 13:36:52.746765] Skipped sticker message
+[2025-10-12 13:37:18.339107] Skipped sticker message
+[2025-10-12 13:37:18.341319] Skipped sticker message
+[2025-10-12 13:37:18.343272] Skipped sticker message
+[2025-10-12 13:37:32.997221] Skipped sticker message
+[2025-10-12 13:37:46.787439] Skipped sticker message
+[2025-10-12 13:37:58.123846] Skipped sticker message
+[2025-10-12 13:38:10.038604] Skipped sticker message
+[2025-10-12 13:38:21.957843] Skipped sticker message
+[2025-10-12 13:38:50.062021] Skipped sticker message
+[2025-10-12 13:39:13.382977] Skipped sticker message
+[2025-10-12 13:39:36.344776] Skipped sticker message
+[2025-10-12 13:40:15.587377] Skipped sticker message
+[2025-10-12 13:40:29.804518] Skipped sticker message
+[2025-10-12 13:40:51.318379] Skipped sticker message
+[2025-10-12 13:40:51.320239] Skipped sticker message
+[2025-10-12 13:40:51.322342] Skipped sticker message
+[2025-10-12 13:41:01.109200] Skipped sticker message
+[2025-10-12 13:41:12.411805] Skipped sticker message
+[2025-10-12 13:41:25.646241] Skipped sticker message
+[2025-10-12 13:41:25.648556] Skipped sticker message
+[2025-10-12 13:41:25.650639] Skipped sticker message
+[2025-10-12 13:41:34.767335] Skipped sticker message
+[2025-10-12 13:41:49.784709] Skipped sticker message
+[2025-10-12 13:42:00.874126] Skipped sticker message
+[2025-10-12 20:55:10.842427] Skipped sticker message
+[2025-10-12 20:55:10.845240] Skipped duplicate: **FiLMY UNiVERSE****
+****https://t.me/+VAadwDIanGJkZTNl****
+****https://t.me/+VAadwDIanGJkZTNl****
+****https://t.me/+VAadwDIanGJkZTNl****
+****Only 400 Members can Join, Join Fast !!!!!**
+[2025-10-12 20:55:10.847821] Skipped duplicate: **FILM FIESTA****
+
+****https://t.me/+nPnle7P_sZhjNDNl****
+****https://t.me/+nPnle7P_sZhjNDNl****
+****https://t.me/+nPnle7P_sZhjNDNl****
+
+Join Here For Latest Films!!
+➖➖➖➖➖➖➖➖➖➖
+Powered By: ****@CiNE_UPLOAD****
+➖➖➖➖➖➖➖➖➖➖**
+[2025-10-13 23:18:33.071120] Skipped duplicate: **FiLMY UNiVERSE****
+****https://t.me/+VAadwDIanGJkZTNl****
+****https://t.me/+VAadwDIanGJkZTNl****
+****https://t.me/+VAadwDIanGJkZTNl****
+****Only 400 Members can Join, Join Fast !!!!!**
+[2025-10-13 23:18:33.085828] Skipped duplicate: **FILM FIESTA****
+
+****https://t.me/+nPnle7P_sZhjNDNl****
+****https://t.me/+nPnle7P_sZhjNDNl****
+****https://t.me/+nPnle7P_sZhjNDNl****
+
+Join Here For Latest Films!!
+➖➖➖➖➖➖➖➖➖➖
+Powered By: ****@CiNE_UPLOAD****
+➖➖➖➖➖➖➖➖➖➖**
+[2025-10-13 23:18:33.088546] Skipped duplicate: **MOVIE NETWORK****
+
+****https://t.me/+kFaD790J2641NGY1****
+****https://t.me/+kFaD790J2641NGY1****
+****https://t.me/+kFaD790J2641NGY1****
+
+300 Members Only...
+➖➖➖➖➖➖➖➖➖➖
+Powered By: ****@CiNE_UPLOAD****
+➖➖➖➖➖➖➖➖➖➖**
+[2025-10-13 23:18:33.090812] Skipped sticker message
+[2025-10-13 23:18:51.477556] Skipped sticker message
+[2025-10-13 23:18:51.479514] Skipped sticker message
+[2025-10-13 23:20:08.000811] Skipped sticker message
+[2025-10-13 23:20:20.000174] Skipped duplicate: **FiLMY UNiVERSE****
+****https://t.me/+VAadwDIanGJkZTNl****
+****https://t.me/+VAadwDIanGJkZTNl****
+****https://t.me/+VAadwDIanGJkZTNl****
+****Only 400 Members can Join, Join Fast !!!!!**
+[2025-10-13 23:20:20.002225] Skipped sticker message
+[2025-10-13 23:20:46.369427] Skipped sticker message
+[2025-10-13 23:20:46.371600] Skipped duplicate: **FiLMY UNiVERSE****
+****https://t.me/+VAadwDIanGJkZTNl****
+****https://t.me/+VAadwDIanGJkZTNl****
+****https://t.me/+VAadwDIanGJkZTNl****
+****Only 400 Members can Join, Join Fast !!!!!**
+[2025-10-15 00:30:01.867292] Skipped sticker message
+[2025-10-15 00:30:01.882532] Skipped sticker message
+[2025-10-15 00:30:01.884946] Skipped duplicate: **Confidence Queen S01 COMBiNED 396p AMZN WEB-DL [Dual Audio] [HINDI HE-AAC 2.0 - KOREAN HE-AAC 2.0] H.264 ~ [SANKET] ~ ExtraFlix.mkv
+➖➖➖➖➖➖➖➖➖➖
+Powered By: ****@CiNE_UPLOAD****
+➖➖➖➖➖➖➖➖➖➖**
+[2025-10-15 00:30:01.887894] Skipped duplicate: **Confidence Queen S01 COMBiNED 720p AMZN WEB-DL [Dual Audio] [HINDI HE-AAC 2.0 - KOREAN HE-AAC 2.0] H.265 ~ [SANKET] ~ ExtraFlix.mkv
+➖➖➖➖➖➖➖➖➖➖
+Powered By: ****@CiNE_UPLOAD****
+➖➖➖➖➖➖➖➖➖➖**
+[2025-10-15 00:30:01.889553] Skipped sticker message
+[2025-10-15 00:30:01.891787] Skipped duplicate: **Sky Movies ✨****
+
+****https://t.me/+6bGp2sSRB2wzYTE1****
+****https://t.me/+6bGp2sSRB2wzYTE1****
+****https://t.me/+6bGp2sSRB2wzYTE1****
+
+500 Members Only...
+➖➖➖➖➖➖➖➖➖➖
+Powered By: ****@CiNE_UPLOAD****
+➖➖➖➖➖➖➖➖➖➖**
+[2025-10-15 00:30:01.894219] Skipped duplicate: **FiLMY UNiVERSE****
+****https://t.me/+VAadwDIanGJkZTNl****
+****https://t.me/+VAadwDIanGJkZTNl****
+****https://t.me/+VAadwDIanGJkZTNl****
+****Only 400 Members can Join, Join Fast !!!!!**
+[2025-10-15 00:30:01.895878] Skipped sticker message
+[2025-10-15 00:30:01.897862] Skipped duplicate: **Gentlemen S01 COMBiNED 480p AT WebRip [Bengali AAC 2.0] H.264 ~ [SANKET] ~ HDWebMovies.mkv
+➖➖➖➖➖➖➖➖➖➖
+Powered By: ****@CiNE_UPLOAD****
+➖➖➖➖➖➖➖➖➖➖**
+[2025-10-15 00:30:01.901071] Skipped duplicate: **Gentlemen S01 COMBiNED 720p AT WebRip [Bengali AAC 2.0] H.264 ~ [SANKET] ~ HDWebMovies.mkv
+➖➖➖➖➖➖➖➖➖➖
+Powered By: ****@CiNE_UPLOAD****
+➖➖➖➖➖➖➖➖➖➖**
+[2025-10-15 00:30:01.903443] Skipped sticker message
+[2025-10-15 00:30:01.905875] Skipped sticker message
+[2025-10-15 00:30:15.774611] Skipped sticker message
+[2025-10-15 00:30:29.379693] Skipped sticker message
+[2025-10-15 00:30:29.381504] Skipped duplicate: **RMG Bollywood ®****
+****https://t.me/+RA41dk6BcMg5ODc1****
+****Join for All New Movies, Only 140 Members Can Join. So, Join Fast !!!**
+[2025-10-15 00:30:43.563585] Skipped sticker message
+[2025-10-15 00:30:43.566753] Skipped sticker message
+[2025-10-15 00:31:07.511595] Skipped sticker message
+[2025-10-15 00:31:31.132347] Skipped sticker message
+[2025-10-15 00:32:46.248322] Skipped sticker message
+[2025-10-15 00:32:46.256823] Skipped sticker message
+[2025-10-15 00:33:37.222322] Skipped sticker message
+[2025-10-15 00:34:35.173259] Skipped sticker message
+[2025-10-15 00:34:35.225895] Skipped duplicate: **Movies Galaxy 2.0 🎭****
+****https://t.me/+YcG2CqHXodczNTJl****
+****Open for Only 200 Members, Join Fast!!!!!!**
+[2025-10-15 00:34:48.235903] Skipped sticker message
+[2025-10-15 00:35:09.679434] Skipped sticker message
+[2025-10-15 00:35:31.429949] Skipped sticker message
+[2025-10-15 00:36:01.302008] Skipped sticker message
+[2025-10-15 00:36:12.331337] Skipped sticker message
+[2025-10-15 00:36:12.344310] Skipped sticker message
+[2025-10-15 00:36:46.927313] Skipped sticker message
+[2025-10-15 21:24:38.896817] Skipped sticker message
+[2025-10-15 21:24:38.900895] Skipped sticker message
+[2025-10-15 21:25:10.320947] Skipped sticker message
+[2025-10-15 21:25:10.336032] Skipped duplicate: **Movies Galaxy 2.0 🎭****
+****https://t.me/+YcG2CqHXodczNTJl****
+****Open for Only 200 Members, Join Fast!!!!!!**
+[2025-10-15 21:25:10.338489] Skipped sticker message
+[2025-10-15 21:25:37.854680] Skipped sticker message
+[2025-10-15 21:26:02.018102] Skipped sticker message
+[2025-10-15 21:26:37.478217] Skipped sticker message
+[2025-10-15 21:26:37.479869] Skipped duplicate: **Movies Galaxy 2.0 🎭****
+****https://t.me/+YcG2CqHXodczNTJl****
+****Open for Only 200 Members, Join Fast!!!!!!**
+[2025-10-18 00:30:44.714057] Skipped sticker message
+[2025-10-18 00:31:06.535604] Skipped sticker message
+[2025-10-18 00:31:16.152023] Skipped sticker message
+[2025-10-18 00:31:38.811150] Skipped sticker message
+[2025-10-18 00:32:18.338875] Skipped sticker message
+[2025-10-18 00:32:31.971252] Skipped sticker message
+[2025-10-18 00:32:56.156982] Skipped sticker message
+[2025-10-18 00:33:32.451564] Skipped sticker message
+[2025-10-18 00:33:51.778421] Skipped sticker message
+[2025-10-18 00:33:51.781460] Skipped duplicate: **𝐈𝐍𝐅𝐎 𝐌𝐀𝐗****
+****https://t.me/+3qPx6EwhTxk3ZTM9****
+****Open for Only 200 Members, Join Fast!!!!!!**
+[2025-10-18 00:34:00.823547] Skipped sticker message
+[2025-10-18 00:34:29.764481] Skipped sticker message
+[2025-10-18 00:34:44.103004] Skipped sticker message
+[2025-10-18 00:34:44.107703] Skipped sticker message
+[2025-10-18 00:35:08.531395] Skipped sticker message
+[2025-10-18 00:35:37.792086] Skipped sticker message
+[2025-10-18 00:35:57.226710] Skipped sticker message
+[2025-10-18 00:36:21.395022] Skipped sticker message
+[2025-10-18 00:36:40.751883] Skipped sticker message
+[2025-10-18 00:37:07.931872] Skipped sticker message
+[2025-10-18 00:37:16.255907] Skipped sticker message
+[2025-10-19 17:26:59.193493] Skipped sticker message
+[2025-10-19 17:27:23.596898] Skipped sticker message
+[2025-10-19 17:27:23.599724] Skipped sticker message
+[2025-10-19 17:27:50.248478] Skipped sticker message
+[2025-10-19 17:28:50.895069] Skipped sticker message
+[2025-10-19 17:29:13.874511] Skipped sticker message
+[2025-10-19 17:29:39.133779] Skipped sticker message
+[2025-10-19 17:29:48.405092] Skipped sticker message
+[2025-10-19 17:30:28.319953] Skipped sticker message
+[2025-10-19 17:31:07.196601] Skipped sticker message
+[2025-10-21 20:40:56.108189] Skipped sticker message
+[2025-10-21 20:41:04.991882] Skipped sticker message
+[2025-10-21 20:41:04.996060] Skipped duplicate: **FiLMY CONTENT****
+****https://t.me/+7T1OOXtc1dA2M2Rl****
+****https://t.me/+7T1OOXtc1dA2M2Rl****
+****https://t.me/+7T1OOXtc1dA2M2Rl****
+****Open for Only 300 Members, Join Fast!!!!!!**
+[2025-10-22 14:08:14.113580] Skipped duplicate: **🚨 Last Call to Join the CineScope Leak Universe! 🚨
+
+This is your one last chance to get exclusive BTS, leaked posters, trailers, and insider movie updates. Once it’s gone, it’s gone! 🎬
+
+Join the private channel here before it closes:**
+👉 https://t.me/+kkPZYd9PlV40YzU1
+[2025-10-22 14:08:14.125696] Skipped duplicate: https://t.me/+P45Fs1RFPpZmOTM9 join this group for exciting and entertaining movies only 20 members left join up fast !!!
+[2025-10-22 22:53:01.493680] Skipped duplicate: **🚨 Last Call to Join the CineScope Leak Universe! 🚨
+
+This is your one last chance to get exclusive BTS, leaked posters, trailers, and insider movie updates. Once it’s gone, it’s gone! 🎬
+
+Join the private channel here before it closes:**
+👉 https://t.me/+kkPZYd9PlV40YzU1
+[2025-10-22 22:53:01.510569] Skipped duplicate: https://t.me/+P45Fs1RFPpZmOTM9 join this group for exciting and entertaining movies only 20 members left join up fast !!!
+[2025-10-22 22:53:01.513450] Skipped duplicate: https://t.me/+P45Fs1RFPpZmOTM9 join this group for exciting and entertaining movies only 10 members left join up fast !!!
+[2025-10-23 21:18:53.253840] Skipped duplicate: https://t.me/+P45Fs1RFPpZmOTM9 join this group for exciting and entertaining movies only 10 members left join up fast !!!
+[2025-10-23 21:18:53.258764] Skipped duplicate: BoB erotic wapis join karo pichla ban ho gaya 
+
+https://t.me/+cCCcAaWE1SA5MzVl
+
+Join fast for erotic movies
+[2025-10-23 21:18:53.260521] Skipped sticker message
+[2025-10-23 21:19:06.239201] Skipped sticker message
+[2025-10-23 21:19:18.988360] Skipped sticker message
+[2025-10-23 21:19:30.821555] Skipped sticker message
+[2025-10-23 21:20:26.056935] Skipped sticker message
+[2025-10-23 21:20:26.058816] Skipped sticker message
+[2025-10-23 21:20:53.592597] Skipped sticker message
+[2025-10-24 14:10:23.854684] Skipped sticker message
+[2025-10-24 14:10:55.461310] Skipped sticker message
+[2025-10-24 14:10:55.463353] Skipped sticker message
+[2025-10-24 14:11:18.440831] Skipped sticker message
+[2025-10-24 14:11:30.150118] Skipped sticker message
+[2025-10-24 14:11:47.713166] Skipped sticker message
+[2025-10-24 14:12:00.272952] Skipped sticker message
+[2025-10-24 15:17:58.869921] Skipped sticker message
+[2025-10-25 16:25:56.366284] Skipped sticker message
+[2025-10-25 16:26:09.825031] Skipped sticker message
+[2025-10-25 16:26:09.827811] Skipped sticker message
+[2025-10-25 16:26:09.830530] Skipped sticker message
+[2025-10-25 16:26:09.832412] Skipped sticker message
+[2025-10-25 16:26:23.527777] Skipped sticker message
+[2025-10-25 16:26:23.530062] Skipped sticker message
+[2025-10-25 16:26:35.805388] Skipped sticker message
+[2025-10-25 16:26:35.807136] Skipped sticker message
+[2025-10-25 16:26:59.002706] Skipped sticker message
+[2025-10-25 16:26:59.004731] Skipped sticker message
+[2025-10-25 16:27:20.911720] Skipped sticker message
+[2025-10-25 16:27:20.913640] Skipped sticker message
+[2025-10-25 16:27:20.915558] Skipped sticker message
+[2025-10-25 16:27:35.607367] Skipped sticker message
+[2025-10-25 16:27:35.609338] Skipped sticker message
+[2025-10-25 16:27:47.734795] Skipped sticker message
+[2025-10-25 16:27:47.736889] Skipped sticker message
+[2025-10-25 16:28:14.679768] Skipped sticker message
+[2025-10-25 16:28:14.681815] Skipped sticker message
+[2025-10-25 16:28:37.135863] Skipped sticker message
+[2025-10-25 16:28:37.137830] Skipped sticker message
+[2025-10-25 16:28:37.139749] Skipped sticker message
+[2025-10-25 16:28:47.782236] Skipped sticker message
+[2025-10-25 16:28:47.784449] Skipped sticker message
+[2025-10-25 16:29:01.049117] Skipped sticker message
+[2025-10-25 16:29:01.051181] Skipped sticker message
+[2025-10-25 16:29:24.444937] Skipped sticker message
+[2025-10-25 16:29:24.446929] Skipped sticker message
+[2025-10-25 16:29:59.881502] Skipped sticker message
+[2025-10-25 16:29:59.883810] Skipped sticker message
+[2025-10-25 16:29:59.887036] Skipped sticker message
+[2025-10-25 16:30:13.169935] Skipped sticker message
+[2025-10-25 16:30:13.171947] Skipped sticker message
+[2025-10-25 16:30:21.989455] Skipped sticker message
+[2025-10-25 16:30:21.991563] Skipped sticker message
+[2025-10-25 16:30:44.690532] Skipped sticker message
+[2025-10-25 16:30:44.692566] Skipped sticker message
+[2025-10-25 16:31:05.419138] Skipped sticker message
+[2025-10-25 16:31:05.421855] Skipped sticker message
+[2025-10-25 16:31:05.423765] Skipped sticker message
+[2025-10-25 16:31:20.324321] Skipped sticker message
+[2025-10-25 16:31:20.326406] Skipped sticker message
+[2025-10-25 16:31:43.219550] Skipped sticker message
+[2025-10-25 16:31:43.221801] Skipped sticker message
+[2025-10-25 16:32:03.054547] Skipped sticker message
+[2025-10-25 16:32:03.056863] Skipped sticker message
+[2025-10-25 16:37:51.742375] Skipped sticker message
+[2025-10-25 16:37:51.745345] Skipped sticker message
+[2025-10-25 16:37:51.748293] Skipped sticker message
+[2025-10-25 16:38:05.366075] Skipped sticker message
+[2025-10-25 16:38:05.368761] Skipped sticker message
+[2025-10-25 16:38:18.000992] Skipped sticker message
+[2025-10-25 16:38:18.004195] Skipped sticker message
+[2025-10-25 16:38:42.114417] Skipped sticker message
+[2025-10-25 16:38:42.116862] Skipped sticker message
+[2025-10-25 16:39:01.216895] Skipped sticker message
+[2025-10-25 16:39:01.219137] Skipped sticker message
+[2025-10-25 16:39:01.221145] Skipped sticker message
+[2025-10-25 16:39:13.141996] Skipped sticker message
+[2025-10-25 16:39:13.144541] Skipped sticker message
+[2025-10-25 16:39:21.623827] Skipped sticker message
+[2025-10-25 16:39:21.626414] Skipped sticker message
+[2025-10-25 16:39:43.125015] Skipped sticker message
+[2025-10-25 16:39:43.127139] Skipped sticker message
+[2025-10-25 16:40:09.768512] Skipped sticker message
+[2025-10-25 16:40:09.770546] Skipped sticker message
+[2025-10-25 16:40:09.772481] Skipped sticker message
+[2025-10-25 16:40:24.298401] Skipped sticker message
+[2025-10-25 16:40:24.300498] Skipped sticker message
+[2025-10-25 16:40:33.160353] Skipped sticker message
+[2025-10-25 16:40:33.162448] Skipped sticker message
+[2025-10-25 16:40:59.022937] Skipped sticker message
+[2025-10-25 16:40:59.025100] Skipped sticker message
+[2025-10-25 16:41:21.354456] Skipped sticker message
+[2025-10-25 16:41:21.356730] Skipped sticker message
+[2025-10-25 16:41:21.359003] Skipped sticker message
+[2025-10-25 16:41:33.698088] Skipped sticker message
+[2025-10-25 16:41:33.700872] Skipped sticker message
+[2025-10-25 16:41:43.797284] Skipped sticker message
+[2025-10-25 16:41:43.799576] Skipped sticker message
+[2025-10-25 16:41:54.241088] Skipped sticker message
+[2025-10-25 16:41:54.243582] Skipped sticker message
+[2025-10-25 16:42:05.451507] Skipped sticker message
+[2025-10-25 16:42:05.453541] Skipped sticker message
+[2025-10-25 16:42:05.455585] Skipped sticker message
+[2025-10-28 21:08:29.392993] Skipped sticker message
+[2025-10-28 21:08:51.026482] Skipped sticker message
+[2025-10-28 21:09:03.022013] Skipped sticker message
+[2025-10-28 21:09:41.249496] Skipped sticker message
+[2025-10-28 21:09:41.251693] Skipped sticker message
+[2025-10-28 21:10:13.343768] Skipped sticker message
+[2025-10-28 21:10:13.346696] Skipped sticker message
+[2025-10-28 21:10:39.025077] Skipped sticker message
+[2025-10-28 21:10:39.027225] Skipped sticker message
+[2025-10-28 21:11:00.207129] Skipped sticker message
+[2025-10-28 21:11:12.256941] Skipped sticker message
+[2025-10-28 21:12:03.856603] Skipped sticker message
+[2025-10-28 21:12:03.859082] Skipped sticker message
+[2025-10-28 21:12:45.552679] Skipped sticker message
+[2025-10-28 21:12:45.556728] Skipped sticker message
+[2025-10-28 21:13:09.187765] Skipped sticker message
+[2025-10-28 21:13:19.552256] Skipped sticker message
+[2025-10-28 21:13:43.894498] Skipped sticker message
+[2025-10-28 21:13:43.897281] Skipped duplicate: **Entertainment Movies****
+**https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1**
+****Open For Limited Time And Members, Join Fast !!!!!!!!**
+[2025-10-28 21:13:55.060000] Skipped duplicate: **Entertainment Movies****
+**https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1**
+****Open For Limited Time And Members, Join Fast !!!!!!!!**
+[2025-10-28 21:13:55.062205] Skipped sticker message
+[2025-10-28 21:14:16.154851] Skipped sticker message
+[2025-10-28 21:14:16.158987] Skipped sticker message
+[2025-10-28 21:14:50.473655] Skipped sticker message
+[2025-10-28 21:14:50.476699] Skipped sticker message
+[2025-10-28 21:15:22.459812] Skipped sticker message
+[2025-10-28 21:15:22.462306] Skipped sticker message
+[2025-10-28 21:20:57.148890] Skipped sticker message
+[2025-10-28 21:20:57.151446] Skipped sticker message
+[2025-10-28 21:21:30.571151] Skipped sticker message
+[2025-10-28 21:21:39.189737] Skipped duplicate: **Entertainment Movies****
+**https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1**
+****Open For Limited Time And Members, Join Fast !!!!!!!!**
+[2025-10-28 21:21:39.192016] Skipped sticker message
+[2025-10-28 21:22:07.030211] Skipped sticker message
+[2025-10-28 21:22:07.034342] Skipped sticker message
+[2025-10-28 21:22:21.594443] Skipped sticker message
+[2025-10-28 21:22:32.699414] Skipped sticker message
+[2025-10-28 21:22:47.018337] Skipped sticker message
+[2025-10-28 21:22:57.941962] Skipped sticker message
+[2025-10-31 02:04:42.043332] Skipped duplicate: **Entertainment Movies****
+**https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1**
+****Open For Limited Time And Members, Join Fast !!!!!!!!**
+[2025-10-31 02:10:50.876783] Skipped sticker message
+[2025-10-31 02:11:51.654234] Skipped sticker message
+[2025-10-31 02:12:53.048902] Skipped sticker message
+[2025-10-31 02:13:03.652309] Skipped sticker message
+[2025-10-31 02:13:26.807020] Skipped sticker message
+[2025-10-31 02:14:10.800601] Skipped sticker message
+[2025-10-31 02:15:01.665632] Skipped sticker message
+[2025-10-31 02:15:42.896793] Skipped sticker message
+[2025-10-31 02:16:03.559167] Skipped sticker message
+[2025-10-31 02:16:14.271220] Skipped duplicate: **Entertainment Movies****
+**https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1**
+****Open For Limited Time And Members, Join Fast !!!!!!!!**
+[2025-10-31 02:22:36.804024] Skipped sticker message
+[2025-10-31 02:23:36.518612] Skipped sticker message
+[2025-10-31 02:24:12.092846] Skipped sticker message
+[2025-10-31 02:24:29.433762] Skipped sticker message
+[2025-10-31 02:25:08.118458] Skipped sticker message
+[2025-10-31 02:25:08.121276] Skipped sticker message
+[2025-10-31 02:25:32.496283] Skipped sticker message
+[2025-10-31 02:25:32.500147] Skipped sticker message
+[2025-10-31 02:25:56.677164] Skipped sticker message
+[2025-10-31 02:25:56.679614] Skipped sticker message
+[2025-10-31 02:25:56.682726] Skipped sticker message
+[2025-10-31 02:26:05.157446] Skipped sticker message
+[2025-10-31 02:26:17.613855] Skipped sticker message
+[2025-10-31 02:26:41.330589] Skipped sticker message
+[2025-10-31 02:26:41.333087] Skipped sticker message
+[2025-10-31 02:26:52.550320] Skipped sticker message
+[2025-10-31 02:27:02.516909] Skipped sticker message
+[2025-10-31 02:27:26.274831] Skipped sticker message
+[2025-10-31 02:27:26.277805] Skipped sticker message
+[2025-10-31 02:27:37.226632] Skipped sticker message
+[2025-10-31 02:27:52.329572] Skipped sticker message
+[2025-10-31 02:28:17.905266] Skipped sticker message
+[2025-10-31 02:28:17.907570] Skipped duplicate: **🎬**** MOViETiMESTV FiLES – Limited Access Alert! ****🎬****
+
+****🔥**** The exclusive Telegram channel is now open for a limited time only!
+Get in before the link disappears into the cinematic void ****📹****💎**
+
+👉** Join Now:** 
+**https://t.me/+WB1KmrIIdPc0YjQ1**
+
+**Once it’s gone… it’s __gone for good.__ ****⏳****
+
+Your ticket to non-stop entertainment awaits. ****🌟**
+[2025-10-31 02:28:36.572662] Skipped sticker message
+[2025-10-31 02:29:09.700815] Skipped sticker message
+[2025-10-31 02:29:09.704033] Skipped sticker message
+[2025-10-31 02:29:09.707306] Skipped sticker message
+[2025-10-31 02:29:19.674642] Skipped sticker message
+[2025-10-31 02:29:32.066467] Skipped sticker message
+[2025-10-31 02:34:55.436662] Skipped sticker message
+[2025-10-31 02:34:55.442014] Skipped duplicate: **South movie and series 🎥****
+****https://t.me/+tKNEzCWu7XMyZmU1****
+****https://t.me/+tKNEzCWu7XMyZmU1****
+****https://t.me/+tKNEzCWu7XMyZmU1****
+****Open for Only 500 Members, Join Fast!!!!!!**
+[2025-10-31 02:34:55.444775] Skipped sticker message
+[2025-10-31 02:35:13.913854] Skipped sticker message
+[2025-10-31 02:35:23.079598] Skipped sticker message
+[2025-10-31 02:35:23.082031] Skipped duplicate: **South movie and series 🎥****
+****https://t.me/+tKNEzCWu7XMyZmU1****
+****https://t.me/+tKNEzCWu7XMyZmU1****
+****https://t.me/+tKNEzCWu7XMyZmU1****
+****Open for Only 500 Members, Join Fast!!!!!!**
+[2025-10-31 16:02:09.493741] Skipped sticker message
+[2025-10-31 16:02:09.509632] Skipped duplicate: **South movie and series 🎥****
+****https://t.me/+tKNEzCWu7XMyZmU1****
+****https://t.me/+tKNEzCWu7XMyZmU1****
+****https://t.me/+tKNEzCWu7XMyZmU1****
+****Open for Only 500 Members, Join Fast!!!!!!**
+[2025-10-31 16:02:09.512508] Skipped duplicate: **Entertainment Movies****
+**https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1**
+****Open For Limited Time And Members, Join Fast !!!!!!!!**
+[2025-10-31 16:02:24.061015] Skipped sticker message
+[2025-10-31 16:02:49.501557] Skipped sticker message
+[2025-10-31 16:03:23.852419] Skipped sticker message
+[2025-10-31 16:04:03.305648] Skipped sticker message
+[2025-10-31 16:04:11.699302] Skipped sticker message
+[2025-10-31 20:48:24.605839] Skipped sticker message
+[2025-10-31 20:48:24.609599] Skipped sticker message
+[2025-10-31 20:49:04.725429] Skipped sticker message
+[2025-10-31 20:49:23.633955] Skipped sticker message
+[2025-10-31 20:49:23.636673] Skipped sticker message
+[2025-10-31 20:49:23.639754] Skipped sticker message
+[2025-10-31 20:49:45.378539] Skipped sticker message
+[2025-10-31 20:49:45.380504] Skipped sticker message
+[2025-10-31 20:50:07.717322] Skipped sticker message
+[2025-10-31 20:50:20.491690] Skipped duplicate: **Entertainment Movies****
+**https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1**
+****Open For Limited Time And Members, Join Fast !!!!!!!!**
+[2025-11-01 01:55:34.338043] Skipped sticker message
+[2025-11-01 01:55:34.353725] Skipped duplicate: https://t.me/+lAfMDinqSJc2ZTc1** join this group for exclusive movies and series only 130 members left JOIN FAST!!!
+➖➖➖➖➖➖➖➖➖➖
+Powered By: **@CiNE_UPLOAD**
+➖➖➖➖➖➖➖➖➖➖**
+[2025-11-01 01:55:34.356928] Skipped duplicate: **Entertainment Movies****
+**https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1
+https://t.me/+yM_SShZpVytiZDU1**
+****Open For Limited Time And Members, Join Fast !!!!!!!!**
+[2025-11-01 01:55:34.359362] Skipped duplicate: https://t.me/+lAfMDinqSJc2ZTc1 join this group for exclusive movies and series only 120 members left JOIN FAST!!!
+[2025-11-01 01:55:34.361387] Skipped sticker message
+[2025-11-01 01:55:55.706457] Skipped sticker message
+[2025-11-01 06:46:48.981032] Skipped sticker message
+[2025-11-01 06:47:54.065880] Skipped sticker message
+[2025-11-01 06:48:53.089610] Skipped sticker message
+[2025-11-01 06:49:35.452995] Skipped sticker message
+[2025-11-01 06:50:23.653082] Skipped sticker message
+[2025-11-01 06:51:29.048109] Skipped sticker message
+[2025-11-01 16:17:16.650273] Skipped sticker message
+[2025-11-01 16:17:16.666248] Skipped duplicate: https://t.me/+lAfMDinqSJc2ZTc1 join this group for exclusive movies and series only 90 members left JOIN FAST!!!
+[2025-11-01 16:17:16.668945] Skipped duplicate: https://t.me/+Croy5Jc7rRc1MTc1
+[2025-11-02 14:43:41.379190] Skipped sticker message
+[2025-11-02 14:44:38.658254] Skipped sticker message
+[2025-11-02 14:44:48.488178] Skipped sticker message
+[2025-11-04 22:50:57.372579] Skipped duplicate: **CineScope Library Again Opened for 48 hrs** 
+**
+****https://t.me/+pDphJ__J5Sw2MDJl**
+[2025-11-04 22:50:57.380056] Skipped duplicate: https://t.me/+yO2Yf6IC0HdlM2Fl
+[2025-11-04 22:50:57.389376] Skipped sticker message
+[2025-11-04 22:51:10.581423] Skipped sticker message
+[2025-11-04 22:51:32.055020] Skipped sticker message
+[2025-11-04 22:51:42.707891] Skipped sticker message
+[2025-11-04 22:52:21.390072] Skipped sticker message
+[2025-11-04 22:52:30.927265] Skipped sticker message
+[2025-11-04 22:53:07.772947] Skipped sticker message
+[2025-11-04 22:53:47.262802] Skipped sticker message
+[2025-11-04 22:54:08.192945] Skipped sticker message
+[2025-11-04 22:54:37.329733] Skipped sticker message
+[2025-11-04 22:55:11.946501] Skipped sticker message
+[2025-11-04 22:55:11.951496] Skipped duplicate: **Funny movie 🤣****
+****https://t.me/+mUEi2DntwuIzMDBl****
+****https://t.me/+mUEi2DntwuIzMDBl****
+****https://t.me/+mUEi2DntwuIzMDBl****
+****Open for Only 500 Members, Join Fast!!!!!!**
+[2025-11-05 11:01:00.259895] Skipped duplicate: **Funny movie 🤣****
+****https://t.me/+mUEi2DntwuIzMDBl****
+****https://t.me/+mUEi2DntwuIzMDBl****
+****https://t.me/+mUEi2DntwuIzMDBl****
+****Open for Only 500 Members, Join Fast!!!!!!**
+[2025-11-06 13:51:40.907684] Skipped sticker message
+[2025-11-06 13:52:04.418972] Skipped sticker message
+[2025-11-06 13:53:14.754983] Skipped sticker message
+[2025-11-06 13:53:29.455003] Skipped sticker message
+[2025-11-06 13:54:45.622305] Skipped sticker message
+[2025-11-06 13:55:49.392649] Skipped sticker message
+[2025-11-06 13:55:49.394720] Skipped duplicate: **Virat Empire:- south movie****
+****https://t.me/+5hle3p7_P_o0OTc1****
+****https://t.me/+5hle3p7_P_o0OTc1****
+****https://t.me/+5hle3p7_P_o0OTc1****
+****Open for Only 100 Members, Join Fast!!!!!!**
+[2025-11-06 13:56:09.859596] Skipped duplicate: Indrani.S03.1080p.AMZN.WEB-DL.Hindi.DDP.2.0.H265-CineHub.mkv
+[2025-11-06 13:56:09.861628] Skipped sticker message
+[2025-11-06 13:56:09.863629] Skipped sticker message
+[2025-11-06 13:56:23.195194] Skipped sticker message
+[2025-11-06 13:56:35.034828] Skipped sticker message
+[2025-11-06 13:56:48.368765] Skipped sticker message
+[2025-11-06 13:57:11.877148] Skipped sticker message
+[2025-11-07 15:26:48.441545] Skipped sticker message
+[2025-11-07 15:27:03.548836] Skipped sticker message
+[2025-11-07 15:27:49.127402] Skipped sticker message
+[2025-11-07 15:28:03.493153] Skipped sticker message
+[2025-11-07 15:28:49.813329] Skipped sticker message
+[2025-11-07 15:28:49.825470] Skipped sticker message
+[2025-11-07 15:28:49.825470] Skipped sticker message
+[2025-11-07 15:29:49.168002] Skipped sticker message
+[2025-11-07 15:30:45.814750] Skipped sticker message
+[2025-11-07 15:31:08.132042] Skipped sticker message
+[2025-11-07 15:31:33.174829] Skipped sticker message
+[2025-11-07 15:31:46.306857] Skipped sticker message
+[2025-11-07 15:32:27.448720] Skipped sticker message
+[2025-11-07 15:33:05.054178] Skipped sticker message
+[2025-11-07 15:34:10.736344] Skipped sticker message
+[2025-11-07 15:39:55.215014] Skipped sticker message
+[2025-11-07 15:40:20.484557] Skipped sticker message
+[2025-11-07 15:40:39.723707] Skipped sticker message
+[2025-11-07 15:41:03.471007] Skipped sticker message
+[2025-11-07 15:41:32.897110] Skipped sticker message
+[2025-11-08 14:37:18.673207] Skipped sticker message
+[2025-11-08 14:37:59.416051] Skipped sticker message
+[2025-11-08 14:37:59.418457] Skipped sticker message
+[2025-11-08 14:37:59.421472] Skipped sticker message
+[2025-11-08 14:38:23.827167] Skipped sticker message
+[2025-11-08 14:38:48.822689] Skipped sticker message
+[2025-11-08 14:39:09.019081] Skipped sticker message
+[2025-11-08 14:39:09.022096] Skipped duplicate: Maharani S04 COMBINED E01-08 WebRip 480p x265 10bit Hindi ESub~|AARAV|~ mkvCinemas.mkv
+[2025-11-08 14:39:09.025071] Skipped duplicate: Maharani S04 COMBINED E01-08 WebRip 720p Hindi x264 ESub~|AARAV|~ mkvCinemas.mkv
+[2025-11-08 14:39:09.028069] Skipped sticker message
+[2025-11-08 14:39:09.030084] Skipped duplicate: **VIRAT EMPIRE:- HOLLYWOOD****
+ MOVIE 🏵️
+****https://t.me/+YY3WrtpwRIxjMTY1****
+****https://t.me/+YY3WrtpwRIxjMTY1****
+****https://t.me/+YY3WrtpwRIxjMTY1****
+****Open for Only 500 Members, Join Fast!!!!!!**
+[2025-11-08 14:39:09.034180] Skipped sticker message
+[2025-11-08 14:39:36.677201] Skipped sticker message
+[2025-11-08 14:39:36.679444] Skipped duplicate: **VIRAT EMPIRE:- HOLLYWOOD****
+ MOVIE 🏵️
+****https://t.me/+YY3WrtpwRIxjMTY1****
+****https://t.me/+YY3WrtpwRIxjMTY1****
+****https://t.me/+YY3WrtpwRIxjMTY1****
+****Open for Only 500 Members, Join Fast!!!!!!**
+[2025-11-08 14:39:36.682693] Skipped sticker message
+[2025-11-08 14:39:57.591055] Skipped sticker message
+[2025-11-08 14:41:00.465801] Skipped sticker message
+[2025-11-08 14:41:30.183618] Skipped sticker message
+[2025-11-08 14:41:47.014313] Skipped sticker message
+[2025-11-08 14:42:14.178224] Skipped sticker message
+[2025-11-08 14:42:14.181228] Skipped sticker message
+[2025-11-08 14:42:14.183227] Skipped sticker message
+[2025-11-08 14:42:36.468004] Skipped sticker message
+[2025-11-08 14:43:00.068076] Skipped sticker message
+[2025-11-09 12:53:37.461841] Skipped sticker message
+[2025-11-09 12:58:55.222249] Skipped duplicate: Buying old groups 
+
+https://t.me/shiv_old_group_buyer
+[2025-11-09 19:00:51.215496] Skipped duplicate: **⚠️ ᴅɪsᴄʟᴀɪᴍᴇʀ :- 
+
+****https://t.me/Cine_Upload****
+
+ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ ʟᴇᴀᴠᴇ ᴛʜɪs ᴄʜᴀɴɴᴇʟ ɢᴜʏs ɪɴᴄᴀsᴇ ɪғ ᴀɴʏ ᴄʜᴀɴɴᴇʟ ɢᴇᴛ ʙᴀɴɴᴇᴅ, ᴛʜᴇɴ ᴛʜᴇ ɴᴇᴡ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ ᴡɪʟʟ ʙᴇ ᴘʀᴏᴠɪᴅᴇᴅ ʜᴇʀᴇ...**
+[2025-11-10 10:31:43.639077] Skipped sticker message
+[2025-11-10 10:32:56.804274] Skipped sticker message
+[2025-11-10 10:32:56.807589] Skipped sticker message
+[2025-11-10 10:33:18.434422] Skipped sticker message
+[2025-11-10 10:33:33.033996] Skipped sticker message
+[2025-11-10 10:34:06.680481] Skipped sticker message
+[2025-11-10 10:34:06.683474] Skipped sticker message
+[2025-11-10 10:34:46.419930] Skipped sticker message
+[2025-11-10 10:36:05.313963] Skipped sticker message
+[2025-11-10 10:36:49.890659] Skipped sticker message

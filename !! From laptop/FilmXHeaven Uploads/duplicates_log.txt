@@ -1,0 +1,357 @@
+[2025-10-04 23:30:58.539580] Skipped sticker message
+[2025-10-04 23:31:19.560929] Skipped sticker message
+[2025-10-04 23:31:20.095435] Skipped sticker message
+[2025-10-04 23:31:43.965614] Skipped sticker message
+[2025-10-04 23:32:15.793694] Skipped sticker message
+[2025-10-04 23:35:04.114920] Skipped sticker message
+[2025-10-04 23:37:09.649323] Skipped sticker message
+[2025-10-04 23:43:19.773035] Skipped sticker message
+[2025-10-04 23:44:30.012166] Skipped sticker message
+[2025-10-04 23:45:07.430368] Skipped sticker message
+[2025-10-04 23:45:40.013772] Skipped sticker message
+[2025-10-04 23:46:20.230553] Skipped sticker message
+[2025-10-04 23:46:56.748465] Skipped sticker message
+[2025-10-04 23:47:31.851198] Skipped sticker message
+[2025-10-04 23:48:35.748990] Skipped sticker message
+[2025-10-04 23:48:35.750092] Skipped sticker message
+[2025-10-04 23:55:00.573996] Skipped sticker message
+[2025-10-04 23:55:22.166882] Skipped sticker message
+[2025-10-04 23:55:47.087152] Skipped sticker message
+[2025-10-04 23:56:45.402372] Skipped sticker message
+[2025-10-04 23:58:15.569936] Skipped sticker message
+[2025-10-04 23:58:39.019445] Skipped sticker message
+[2025-10-04 23:59:44.772311] Skipped sticker message
+[2025-10-05 00:06:17.934972] Skipped sticker message
+[2025-10-05 09:00:39.904937] Skipped duplicate: `Ghost.Stories.2020.720p.WEBRip.2CH.x265.HEVC-Streamion.mkv`
+[2025-10-05 09:00:39.906331] Skipped duplicate: `Good.Newwz.2019.720p.10bit.WEBRip.2CH.x265.HEVC-Streamion.mkv`
+[2025-10-05 09:00:39.906998] Skipped duplicate: `Guilty.2020.720p.10bit.WEBRip.2CH.x265.HEVC-Streamion.mkv`
+[2025-10-05 09:00:39.907995] Skipped duplicate: `Gully.Boy.2019.720p.10bit.WEBRip.2CH.x265.HEVC-Streamion.mkv`
+[2025-10-05 09:00:39.909111] Skipped duplicate: `House.Arrest.2019.1080p.10bit.WEBRip.6CH.x265.HEVC-Streamion.mkv`
+[2025-10-05 09:00:39.910008] Skipped duplicate: `House.Arrest.2019.720p.WEBRip.2CH.x265.HEVC-Streamion.mkv`
+[2025-10-05 09:00:39.910992] Skipped duplicate: `Housefull.4.2019.720p.WEBRip.2CH.x265.HEVC-Streamion.mkv`
+[2025-10-05 09:00:39.911996] Skipped duplicate: `Hum.Do.Hamare.Do.2021.HINDI.720p.10bit.WEBRip.6CH.x265.HEVC-Streamion.mkv`
+[2025-10-05 09:00:39.912776] Skipped duplicate: `Jaane.Tu.Ya.Jaane.Na.2008.720p.BrRip.2CH.x265.HEVC-Streamion.mkv`
+[2025-10-05 09:00:39.913941] Skipped duplicate: `Jab.We.Met.2007.720p.BrRip.2CH.x265.HEVC-Streamion.mkv`
+[2025-10-05 09:00:39.915208] Skipped duplicate: `Judgementall.Hai.Kya.2019.1080p.WEBRip.2CH.x265.HEVC-Streamion.mkv`
+[2025-10-05 09:14:19.262649] Skipped sticker message
+[2025-10-05 09:14:54.603017] Skipped sticker message
+[2025-10-05 09:15:16.602295] Skipped sticker message
+[2025-10-05 09:25:24.807580] Skipped sticker message
+[2025-10-05 09:25:46.414043] Skipped sticker message
+[2025-10-05 09:26:10.870826] Skipped sticker message
+[2025-10-05 09:27:21.078782] Skipped sticker message
+[2025-10-05 09:28:52.596112] Skipped sticker message
+[2025-10-05 09:29:36.140649] Skipped sticker message
+[2025-10-05 09:30:11.884011] Skipped duplicate: **Se7en AKA Seven (1995) REMASTERED 1080p 10bit BluRay HEVC x265 [Hindi NF HE-AAC 2.0 128kbps + English DDP 5.1] ESub ~ R∆G∆ ~ Pahe.mkv**
+[2025-10-05 09:30:35.026223] Skipped sticker message
+[2025-10-05 09:36:07.479021] Skipped sticker message
+[2025-10-05 09:36:33.346899] Skipped sticker message
+[2025-10-05 09:37:12.558795] Skipped sticker message
+[2025-10-05 09:37:34.842540] Skipped sticker message
+[2025-10-05 09:37:57.367337] Skipped sticker message
+[2025-10-05 09:38:16.698334] Skipped sticker message
+[2025-10-05 09:38:45.567983] Skipped sticker message
+[2025-10-05 09:39:12.508534] Skipped sticker message
+[2025-10-05 09:39:56.195449] Skipped sticker message
+[2025-10-05 09:40:39.519482] Skipped sticker message
+[2025-10-05 09:41:00.833395] Skipped sticker message
+[2025-10-05 09:49:10.193639] Skipped sticker message
+[2025-10-05 09:49:51.610932] Skipped sticker message
+[2025-10-05 09:50:44.918111] Skipped sticker message
+[2025-10-05 09:51:18.777015] Skipped sticker message
+[2025-10-05 09:52:08.070276] Skipped sticker message
+[2025-10-05 09:53:38.866653] Skipped sticker message
+[2025-10-05 10:00:15.375253] Skipped sticker message
+[2025-10-05 10:01:36.263589] Skipped sticker message
+[2025-10-05 10:01:57.244948] Skipped sticker message
+[2025-10-05 10:02:17.499481] Skipped sticker message
+[2025-10-05 10:03:48.581390] Skipped sticker message
+[2025-10-05 10:05:20.300973] Skipped sticker message
+[2025-10-05 10:11:53.651249] Skipped sticker message
+[2025-10-05 10:11:53.653023] Skipped sticker message
+[2025-10-05 10:12:07.164773] Skipped sticker message
+[2025-10-05 10:12:28.921719] Skipped sticker message
+[2025-10-05 10:12:54.826448] Skipped sticker message
+[2025-10-05 10:13:28.061490] Skipped sticker message
+[2025-10-05 10:13:51.268086] Skipped sticker message
+[2025-10-05 10:14:19.797707] Skipped sticker message
+[2025-10-05 10:14:55.311988] Skipped sticker message
+[2025-10-05 10:15:33.847311] Skipped sticker message
+[2025-10-05 10:16:44.193259] Skipped sticker message
+[2025-10-05 10:17:05.582089] Skipped sticker message
+[2025-10-05 10:22:37.488141] Skipped sticker message
+[2025-10-05 10:23:25.463631] Skipped sticker message
+[2025-10-05 10:23:44.172598] Skipped sticker message
+[2025-10-05 10:24:06.127324] Skipped sticker message
+[2025-10-05 10:25:03.723402] Skipped sticker message
+[2025-10-05 10:26:16.270915] Skipped sticker message
+[2025-10-05 10:27:25.966181] Skipped sticker message
+[2025-10-05 10:28:48.818521] Skipped sticker message
+[2025-10-05 10:29:13.278432] Skipped sticker message
+[2025-10-05 10:35:07.759434] Skipped sticker message
+[2025-10-05 10:35:28.798533] Skipped sticker message
+[2025-10-05 10:35:50.317615] Skipped sticker message
+[2025-10-05 10:37:03.796508] Skipped sticker message
+[2025-10-05 10:38:29.422907] Skipped sticker message
+[2025-10-05 10:38:38.547855] Skipped sticker message
+[2025-10-05 10:39:18.643098] Skipped sticker message
+[2025-10-05 10:39:44.217897] Skipped sticker message
+[2025-10-05 10:39:53.708052] Skipped sticker message
+[2025-10-05 10:40:07.113316] Skipped sticker message
+[2025-10-05 10:40:20.500835] Skipped sticker message
+[2025-10-05 10:40:38.270344] Skipped sticker message
+[2025-10-05 10:46:59.762229] Skipped sticker message
+[2025-10-05 10:47:24.386620] Skipped sticker message
+[2025-10-05 22:36:33.817737] Skipped sticker message
+[2025-10-06 07:44:02.376476] Skipped sticker message
+[2025-10-06 09:18:33.145162] Skipped sticker message
+[2025-10-06 10:20:54.367492] Skipped sticker message
+[2025-10-06 14:13:56.234433] Skipped sticker message
+[2025-10-06 14:15:12.207358] Skipped sticker message
+[2025-10-06 14:15:35.683517] Skipped sticker message
+[2025-10-06 14:15:35.684346] Skipped sticker message
+[2025-10-06 14:15:45.858672] Skipped sticker message
+[2025-10-06 14:16:09.144650] Skipped sticker message
+[2025-10-06 14:17:20.556316] Skipped sticker message
+[2025-10-06 19:39:31.644355] Skipped sticker message
+[2025-10-07 09:01:29.666116] Skipped sticker message
+[2025-10-08 11:16:30.504755] Skipped sticker message
+[2025-10-08 19:29:02.397028] Skipped sticker message
+[2025-10-09 14:25:19.068991] Skipped sticker message
+[2025-10-09 14:25:19.070882] Skipped sticker message
+[2025-10-09 14:26:18.613472] Skipped sticker message
+[2025-10-09 14:26:51.767469] Skipped sticker message
+[2025-10-09 14:27:11.567983] Skipped sticker message
+[2025-10-09 14:27:42.078988] Skipped sticker message
+[2025-10-09 14:27:57.284855] Skipped sticker message
+[2025-10-09 14:28:51.223796] Skipped sticker message
+[2025-10-09 14:28:51.224613] Skipped sticker message
+[2025-10-09 14:28:51.225240] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AAC 2.0  + Tamil AAC 2.0] ESub - Immortal.mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/l9sWDr)
+[2025-10-09 14:28:51.226009] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/ICF4nM)
+[2025-10-09 14:28:51.227027] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/rB5YLU)
+[2025-10-09 14:28:51.228358] Skipped duplicate: **Coolie.2025.1080p.10bit.DS4K.AMZN.WEBRip.Hindi-Tamil.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**__GD-Link__**](https://gdlink.dev/file/FmL5C4d3jgD24c3)
+[2025-10-09 14:28:51.229702] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AMZN DDP 5.1 ~ 640Kbps + Tamil DDP 5.1] ESub ~ TDP ~ ATH.mkv**
+
+♻️ [**__HUB-DRiVE__**](https://hubcloud.one/video/kccpj0jddtxktkn)
+[2025-10-09 14:28:51.230688] Skipped sticker message
+[2025-10-09 14:28:51.231747] Skipped duplicate: **War.2.2025.720p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/dD2GSaFiOTYlNLq)
+[2025-10-09 14:28:51.232790] Skipped duplicate: **War 2 (2025) 720p 10bit DS4K NF WEBRip x265 HEVC Hindi DDP 5.1 ESub - Immortal.mkv**
+
+♻️ [**GO-File**](https://gofile.io/d/MS09pX)
+[2025-10-09 14:28:51.233891] Skipped duplicate: **War.2.2025.1080p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/QMh2DTVSsOwXT2S)
+[2025-10-09 14:28:51.234905] Skipped sticker message
+[2025-10-10 03:35:31.551977] Skipped sticker message
+[2025-10-10 03:35:31.554537] Skipped sticker message
+[2025-10-10 03:35:31.556031] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AAC 2.0  + Tamil AAC 2.0] ESub - Immortal.mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/l9sWDr)
+[2025-10-10 03:35:31.557356] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/ICF4nM)
+[2025-10-10 03:35:31.559155] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/rB5YLU)
+[2025-10-10 03:35:31.561054] Skipped duplicate: **Coolie.2025.1080p.10bit.DS4K.AMZN.WEBRip.Hindi-Tamil.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**__GD-Link__**](https://gdlink.dev/file/FmL5C4d3jgD24c3)
+[2025-10-10 03:35:31.563279] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AMZN DDP 5.1 ~ 640Kbps + Tamil DDP 5.1] ESub ~ TDP ~ ATH.mkv**
+
+♻️ [**__HUB-DRiVE__**](https://hubcloud.one/video/kccpj0jddtxktkn)
+[2025-10-10 03:35:31.564734] Skipped sticker message
+[2025-10-10 03:35:31.566244] Skipped duplicate: **War.2.2025.720p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/dD2GSaFiOTYlNLq)
+[2025-10-10 03:35:31.567508] Skipped duplicate: **War 2 (2025) 720p 10bit DS4K NF WEBRip x265 HEVC Hindi DDP 5.1 ESub - Immortal.mkv**
+
+♻️ [**GO-File**](https://gofile.io/d/MS09pX)
+[2025-10-10 03:35:31.569714] Skipped duplicate: **War.2.2025.1080p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/QMh2DTVSsOwXT2S)
+[2025-10-10 03:35:31.571295] Skipped sticker message
+[2025-10-10 14:38:27.817442] Skipped sticker message
+[2025-10-10 14:38:27.820321] Skipped sticker message
+[2025-10-10 14:38:27.821714] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AAC 2.0  + Tamil AAC 2.0] ESub - Immortal.mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/l9sWDr)
+[2025-10-10 14:38:27.823022] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/ICF4nM)
+[2025-10-10 14:38:27.824244] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/rB5YLU)
+[2025-10-10 14:38:27.825598] Skipped duplicate: **Coolie.2025.1080p.10bit.DS4K.AMZN.WEBRip.Hindi-Tamil.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**__GD-Link__**](https://gdlink.dev/file/FmL5C4d3jgD24c3)
+[2025-10-10 14:38:27.826914] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AMZN DDP 5.1 ~ 640Kbps + Tamil DDP 5.1] ESub ~ TDP ~ ATH.mkv**
+
+♻️ [**__HUB-DRiVE__**](https://hubcloud.one/video/kccpj0jddtxktkn)
+[2025-10-10 14:38:27.828182] Skipped sticker message
+[2025-10-10 14:38:27.829515] Skipped duplicate: **War.2.2025.720p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/dD2GSaFiOTYlNLq)
+[2025-10-10 14:38:27.830756] Skipped duplicate: **War 2 (2025) 720p 10bit DS4K NF WEBRip x265 HEVC Hindi DDP 5.1 ESub - Immortal.mkv**
+
+♻️ [**GO-File**](https://gofile.io/d/MS09pX)
+[2025-10-10 14:38:27.832175] Skipped duplicate: **War.2.2025.1080p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/QMh2DTVSsOwXT2S)
+[2025-10-10 14:38:27.833739] Skipped sticker message
+[2025-10-11 07:59:05.259135] Skipped sticker message
+[2025-10-11 07:59:05.261362] Skipped sticker message
+[2025-10-11 07:59:05.262492] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AAC 2.0  + Tamil AAC 2.0] ESub - Immortal.mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/l9sWDr)
+[2025-10-11 07:59:05.263230] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/ICF4nM)
+[2025-10-11 07:59:05.263903] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/rB5YLU)
+[2025-10-11 07:59:05.264773] Skipped duplicate: **Coolie.2025.1080p.10bit.DS4K.AMZN.WEBRip.Hindi-Tamil.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**__GD-Link__**](https://gdlink.dev/file/FmL5C4d3jgD24c3)
+[2025-10-11 07:59:05.266069] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AMZN DDP 5.1 ~ 640Kbps + Tamil DDP 5.1] ESub ~ TDP ~ ATH.mkv**
+
+♻️ [**__HUB-DRiVE__**](https://hubcloud.one/video/kccpj0jddtxktkn)
+[2025-10-11 07:59:05.267205] Skipped sticker message
+[2025-10-11 07:59:05.268263] Skipped duplicate: **War.2.2025.720p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/dD2GSaFiOTYlNLq)
+[2025-10-11 07:59:05.269392] Skipped duplicate: **War 2 (2025) 720p 10bit DS4K NF WEBRip x265 HEVC Hindi DDP 5.1 ESub - Immortal.mkv**
+
+♻️ [**GO-File**](https://gofile.io/d/MS09pX)
+[2025-10-11 07:59:05.270290] Skipped duplicate: **War.2.2025.1080p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/QMh2DTVSsOwXT2S)
+[2025-10-11 07:59:05.271364] Skipped sticker message
+[2025-10-11 12:38:54.471847] Skipped sticker message
+[2025-10-11 12:38:54.474156] Skipped sticker message
+[2025-10-11 12:38:54.475009] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AAC 2.0  + Tamil AAC 2.0] ESub - Immortal.mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/l9sWDr)
+[2025-10-11 12:38:54.476256] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/ICF4nM)
+[2025-10-11 12:38:54.477676] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/rB5YLU)
+[2025-10-11 12:38:54.478596] Skipped duplicate: **Coolie.2025.1080p.10bit.DS4K.AMZN.WEBRip.Hindi-Tamil.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**__GD-Link__**](https://gdlink.dev/file/FmL5C4d3jgD24c3)
+[2025-10-11 12:38:54.479752] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AMZN DDP 5.1 ~ 640Kbps + Tamil DDP 5.1] ESub ~ TDP ~ ATH.mkv**
+
+♻️ [**__HUB-DRiVE__**](https://hubcloud.one/video/kccpj0jddtxktkn)
+[2025-10-11 12:38:54.480785] Skipped sticker message
+[2025-10-11 12:38:54.482075] Skipped duplicate: **War.2.2025.720p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/dD2GSaFiOTYlNLq)
+[2025-10-11 12:38:54.487700] Skipped duplicate: **War 2 (2025) 720p 10bit DS4K NF WEBRip x265 HEVC Hindi DDP 5.1 ESub - Immortal.mkv**
+
+♻️ [**GO-File**](https://gofile.io/d/MS09pX)
+[2025-10-11 12:38:54.491316] Skipped duplicate: **War.2.2025.1080p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/QMh2DTVSsOwXT2S)
+[2025-10-11 12:38:54.493983] Skipped sticker message
+[2025-10-12 13:35:28.292878] Skipped sticker message
+[2025-10-12 13:35:28.309023] Skipped sticker message
+[2025-10-12 13:35:28.310227] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AAC 2.0  + Tamil AAC 2.0] ESub - Immortal.mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/l9sWDr)
+[2025-10-12 13:35:28.310984] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/ICF4nM)
+[2025-10-12 13:35:28.311500] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/rB5YLU)
+[2025-10-12 13:35:28.312144] Skipped duplicate: **Coolie.2025.1080p.10bit.DS4K.AMZN.WEBRip.Hindi-Tamil.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**__GD-Link__**](https://gdlink.dev/file/FmL5C4d3jgD24c3)
+[2025-10-12 13:35:28.313175] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AMZN DDP 5.1 ~ 640Kbps + Tamil DDP 5.1] ESub ~ TDP ~ ATH.mkv**
+
+♻️ [**__HUB-DRiVE__**](https://hubcloud.one/video/kccpj0jddtxktkn)
+[2025-10-12 13:35:28.314218] Skipped sticker message
+[2025-10-12 13:35:28.315187] Skipped duplicate: **War.2.2025.720p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/dD2GSaFiOTYlNLq)
+[2025-10-12 13:35:28.316320] Skipped duplicate: **War 2 (2025) 720p 10bit DS4K NF WEBRip x265 HEVC Hindi DDP 5.1 ESub - Immortal.mkv**
+
+♻️ [**GO-File**](https://gofile.io/d/MS09pX)
+[2025-10-12 13:35:28.317346] Skipped duplicate: **War.2.2025.1080p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/QMh2DTVSsOwXT2S)
+[2025-10-12 13:35:28.318317] Skipped sticker message
+[2025-10-12 20:50:51.350125] Skipped sticker message
+[2025-10-12 20:50:51.352737] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AAC 2.0  + Tamil AAC 2.0] ESub - Immortal.mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/l9sWDr)
+[2025-10-12 20:50:51.353693] Skipped duplicate: **Coolie (2025) 720p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/ICF4nM)
+[2025-10-12 20:50:51.354502] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip HINDI AAC5.1 x265 HEVC ESub (LSSJBroly-Proxy).mkv**
+
+♻️ [**__GO-File__**](https://gofile.io/d/rB5YLU)
+[2025-10-12 20:50:51.355348] Skipped duplicate: **Coolie.2025.1080p.10bit.DS4K.AMZN.WEBRip.Hindi-Tamil.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**__GD-Link__**](https://gdlink.dev/file/FmL5C4d3jgD24c3)
+[2025-10-12 20:50:51.356408] Skipped duplicate: **Coolie (2025) 1080p 10bit DS4K AMZN WEBRip x265 HEVC [Hindi AMZN DDP 5.1 ~ 640Kbps + Tamil DDP 5.1] ESub ~ TDP ~ ATH.mkv**
+
+♻️ [**__HUB-DRiVE__**](https://hubcloud.one/video/kccpj0jddtxktkn)
+[2025-10-12 20:50:51.357150] Skipped sticker message
+[2025-10-12 20:50:51.357821] Skipped duplicate: **War.2.2025.720p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/dD2GSaFiOTYlNLq)
+[2025-10-12 20:50:51.358500] Skipped duplicate: **War 2 (2025) 720p 10bit DS4K NF WEBRip x265 HEVC Hindi DDP 5.1 ESub - Immortal.mkv**
+
+♻️ [**GO-File**](https://gofile.io/d/MS09pX)
+[2025-10-12 20:50:51.359435] Skipped duplicate: **War.2.2025.1080p.10bit.DS4K.NF.WEBRip.Hindi.DDP5.1.x265.HEVC-Ospreay.mkv**
+
+♻️ [**GD-Link**](https://gdlink.dev/file/QMh2DTVSsOwXT2S)
+[2025-10-12 20:50:51.360101] Skipped sticker message
+[2025-10-12 20:54:08.346053] Skipped sticker message
+[2025-10-13 23:17:29.791021] Skipped sticker message
+[2025-10-15 00:28:57.161146] Skipped sticker message
+[2025-10-15 21:23:35.792251] Skipped sticker message
+[2025-10-18 00:29:29.377188] Skipped sticker message
+[2025-10-19 17:17:09.797037] Skipped sticker message
+[2025-10-19 17:17:09.800966] Skipped sticker message
+[2025-10-19 17:18:22.419125] Skipped sticker message
+[2025-10-19 17:19:09.344227] Skipped sticker message
+[2025-10-19 17:19:54.029081] Skipped sticker message
+[2025-10-19 17:20:43.213758] Skipped sticker message
+[2025-10-21 20:38:14.870562] Skipped sticker message
+[2025-10-21 20:39:24.891922] Skipped sticker message
+[2025-10-22 14:07:08.645980] Skipped sticker message
+[2025-10-22 22:51:56.491432] Skipped sticker message
+[2025-10-23 21:16:39.407281] Skipped sticker message
+[2025-10-23 21:17:00.940619] Skipped sticker message
+[2025-10-31 20:47:06.340284] Skipped sticker message
+[2025-10-31 20:47:17.325103] Skipped sticker message
+[2025-11-01 01:54:31.238533] Skipped sticker message
+[2025-11-01 06:45:37.164840] Skipped sticker message
+[2025-11-01 16:16:13.692865] Skipped sticker message
+[2025-11-02 14:42:28.288410] Skipped sticker message
+[2025-11-04 11:25:04.749804] Skipped sticker message
+[2025-11-04 22:49:53.737944] Skipped sticker message
+[2025-11-05 10:59:57.199760] Skipped sticker message
+[2025-11-06 13:49:32.666483] Skipped sticker message
+[2025-11-06 13:50:05.750969] Skipped sticker message
+[2025-11-06 13:50:26.619656] Skipped sticker message
+[2025-11-07 15:25:44.996754] Skipped sticker message
+[2025-11-08 14:35:30.763605] Skipped sticker message
+[2025-11-08 14:35:49.222120] Skipped sticker message
+[2025-11-08 14:36:16.195053] Skipped sticker message
+[2025-11-09 12:52:34.126021] Skipped sticker message
+[2025-11-09 18:59:48.052449] Skipped sticker message
+[2025-11-10 10:30:39.656980] Skipped sticker message
