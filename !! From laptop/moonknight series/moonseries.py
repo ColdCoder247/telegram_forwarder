@@ -6,8 +6,9 @@ from hashlib import md5
 from datetime import datetime
 
 # === CONFIG ===
-api_id = 25207645
-api_hash = '0a1e4359661414bd09455120935ebecd'
+api_id = int(os.getenv("TG_API_ID"))
+api_hash = os.getenv("TG_API_HASH")
+
 source_group = '-1003293794239'  # Use @username or group ID
 destination_groups = ['@JK_HDSGIJ_HPUHSA_mfdgsdgjkhiuahs']
 
@@ -172,3 +173,4 @@ try:
     client.loop.run_until_complete(forward_history())
 except KeyboardInterrupt:
     print("\n🛑 Bot stopped by user.")
+
