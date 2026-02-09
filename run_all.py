@@ -5,6 +5,10 @@ import time
 # ✅ Always run from repo root
 BASE_DIR = os.getcwd()
 
+# ⏱️ Max runtime: 5 hours 30 minutes (to stay under GitHub 6h limit)
+START_TIME = time.time()
+MAX_RUNTIME = (5 * 60 * 60) + (30 * 60)  # 19800 seconds
+
 # 🔹 Relative paths (Linux + GitHub Actions compatible)
 scripts = [
     "!! From laptop/𝙿𝚒𝚁𝙰𝙲𝚈 𝚁𝚊𝙲𝙺𝚎𝚃 V6/piracy.py",
@@ -23,6 +27,12 @@ scripts = [
 ]
 
 for script in scripts:
+
+    # ⏱️ Auto-stop after 5h 30m
+    if time.time() - START_TIME >= MAX_RUNTIME:
+        print("⏹️ Time limit reached (5h 30m). Stopping run safely.")
+        break
+
     script_path = os.path.join(BASE_DIR, script)
     script_dir = os.path.dirname(script_path)
     script_name = os.path.basename(script_path)
@@ -51,4 +61,4 @@ for script in scripts:
     print("⏳ Waiting 60 seconds before next script...\n")
     time.sleep(60)
 
-print("\n🎉 All scripts processed (success + skipped + failed).")
+print("\n🏁 Run finished (completed / skipped / stopped by time limit).")
