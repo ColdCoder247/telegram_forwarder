@@ -11,19 +11,19 @@ MAX_RUNTIME = (5 * 60 * 60) + (30 * 60)  # 19800 seconds
 
 # 🔹 Relative paths (Linux + GitHub Actions compatible)
 scripts = [
-    "!! From laptop/𝙿𝚒𝚁𝙰𝙲𝚈 𝚁𝚊𝙲𝙺𝚎𝚃 V6/piracy.py",
-    "!! From laptop/All In ONE ~ TG Files/allinone.py",
-    "!! From laptop/Movie Mania 2.0/moviemania.py",
-    "!! From laptop/Hindi FHD Collections/Hindi FHD Collections.py",
+#    "!! From laptop/𝙿𝚒𝚁𝙰𝙲𝚈 𝚁𝚊𝙲𝙺𝚎𝚃 V6/piracy.py",
+#    "!! From laptop/All In ONE ~ TG Files/allinone.py",
+#    "!! From laptop/Movie Mania 2.0/moviemania.py",
+#    "!! From laptop/Hindi FHD Collections/Hindi FHD Collections.py",
     "!! From laptop/Hindi FHD Movies/Hindi FHD Movies.py",
-    "!! From laptop/Hindi FHD Series/Hindi FHD Series.py",
-    "!! From laptop/FilmXHeaven Uploads/FilmXHeaven Uploads.py",
-    "!! From laptop/CiNE UPLOADS COMBiNATiON/CiNE UPLOADS COMBiNATION.py",
-    "!! From laptop/CiNE UPLOADS MOViES/CiNE UPLOADS MOViES.py",
-    "!! From laptop/CiNE UPLOADS SERiES/CiNE UPLOADS SERiES.py",
-    "!! From laptop/Limited Edition Req Files/Limited Edition Req Files.py",
-    "!! From laptop/moonknight movies/moonmovies.py",
-    "!! From laptop/moonknight series/moonseries.py",
+#    "!! From laptop/Hindi FHD Series/Hindi FHD Series.py",
+#    "!! From laptop/FilmXHeaven Uploads/FilmXHeaven Uploads.py",
+#    "!! From laptop/CiNE UPLOADS COMBiNATiON/CiNE UPLOADS COMBiNATION.py",
+#    "!! From laptop/CiNE UPLOADS MOViES/CiNE UPLOADS MOViES.py",
+#    "!! From laptop/CiNE UPLOADS SERiES/CiNE UPLOADS SERiES.py",
+#    "!! From laptop/Limited Edition Req Files/Limited Edition Req Files.py",
+#    "!! From laptop/moonknight movies/moonmovies.py",
+#    "!! From laptop/moonknight series/moonseries.py",
 ]
 
 for script in scripts:
