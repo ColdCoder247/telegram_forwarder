@@ -2,9 +2,14 @@ name: Telegram Auto Forwarder
 
 on:
   schedule:
-      - cron: "0 1 * * *"    # 06:30 AM IST
-      - cron: "0 13 * * *"   # 06:30 PM IST
+    - cron: "0 1 * * *"    # 06:30 AM IST
+    - cron: "0 13 * * *"   # 06:30 PM IST
   workflow_dispatch:
+
+# 🛡️ Prevent overlapping runs
+concurrency:
+  group: telegram-auto-forwarder
+  cancel-in-progress: true
 
 jobs:
   run:
@@ -29,3 +34,16 @@ jobs:
         ALERT_BOT_TOKEN: ${{ secrets.ALERT_BOT_TOKEN }}
         ALERT_CHAT_ID: ${{ secrets.ALERT_CHAT_ID }}
       run: python run_all.py
+
+    # 💾 Single combined commit for ALL updated .txt files
+    - name: Commit updated txt files (combined)
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+
+        git add "**/*.txt"
+
+        # Commit only if there are changes
+        git diff --cached --quiet || git commit -m "Auto-update progress & logs"
+
+        git push
