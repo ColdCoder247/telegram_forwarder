@@ -2,74 +2,52 @@ import os
 import subprocess
 import time
 
-# ✅ Always run from repo root
+# Always run from repo root
 BASE_DIR = os.getcwd()
 
-# ⏱️ Max runtime: 5 hours 30 minutes
+# Max runtime: 5 hours 30 minutes
 START_TIME = time.time()
 MAX_RUNTIME = (5 * 60 * 60) + (30 * 60)
 
-# 🔹 Multiple scripts (enable / disable freely)
+# Enable / disable scripts freely
 scripts = [
-#    "!! From laptop/𝙿𝚒𝚁𝙰𝙲𝚈 𝚁𝚊𝙲𝙺𝚎𝚃 V6/piracy.py",
-#    "!! From laptop/All In ONE ~ TG Files/allinone.py",
-#    "!! From laptop/Movie Mania 2.0/moviemania.py",
-#    "!! From laptop/Hindi FHD Collections/Hindi FHD Collections.py",
     "!! From laptop/Hindi FHD Movies/Hindi FHD Movies.py",
-#    "!! From laptop/Hindi FHD Series/Hindi FHD Series.py",
-#    "!! From laptop/FilmXHeaven Uploads/FilmXHeaven Uploads.py",
-#    "!! From laptop/CiNE UPLOADS COMBiNATiON/CiNE UPLOADS COMBiNATION.py",
-#    "!! From laptop/CiNE UPLOADS MOViES/CiNE UPLOADS MOViES.py",
-#    "!! From laptop/CiNE UPLOADS SERiES/CiNE UPLOADS SERiES.py",
-#    "!! From laptop/Limited Edition Req Files/Limited Edition Req Files.py",
-#    "!! From laptop/moonknight movies/moonmovies.py",
-#    "!! From laptop/moonknight series/moonseries.py",
+    # Add more here safely
 ]
 
-# 🔁 Commit function (runs AFTER EACH script)
-def commit_txt_files():
+# ================= COMMIT FUNCTION =================
+
+def commit_progress():
     try:
-        subprocess.run(
-            ["git", "config", "user.name", "github-actions"],
-            check=True
-        )
-        subprocess.run(
-            ["git", "config", "user.email", "github-actions@github.com"],
-            check=True
-        )
+        # Configure Git
+        subprocess.run(["git", "config", "user.name", "github-actions"], check=True)
+        subprocess.run(["git", "config", "user.email", "github-actions@github.com"], check=True)
 
-        # Add all txt files
-        subprocess.run(
-            ["git", "add", "**/*.txt"],
-            check=True
-        )
+        # Add ALL changes (universal, future-proof)
+        subprocess.run(["git", "add", "."], check=True)
 
-        # Commit only if something changed
-        result = subprocess.run(
-            ["git", "diff", "--cached", "--quiet"],
-            check=False
-        )
+        # Check if anything staged
+        result = subprocess.run(["git", "diff", "--cached", "--quiet"])
 
         if result.returncode != 0:
             subprocess.run(
-                ["git", "commit", "-m", "Auto-update progress & logs"],
+                ["git", "commit", "-m", "Auto-update Telegram progress"],
                 check=True
             )
             subprocess.run(["git", "push"], check=True)
-            print("💾 Progress committed to GitHub")
+            print("💾 Progress committed successfully")
         else:
-            print("ℹ️ No txt changes to commit")
+            print("ℹ️ No changes to commit")
 
     except Exception as e:
-        print(f"⚠️ Commit failed or skipped: {e}")
+        print(f"⚠️ Commit skipped or failed: {e}")
 
 # ================= MAIN LOOP =================
 
 for script in scripts:
 
-    # ⏱️ Hard stop if time exceeded
     if time.time() - START_TIME >= MAX_RUNTIME:
-        print("⏹️ Time limit reached (5h 30m). Stopping run.")
+        print("⏹️ Time limit reached. Stopping run.")
         break
 
     script_path = os.path.join(BASE_DIR, script)
@@ -78,7 +56,6 @@ for script in scripts:
 
     print(f"\n=== Running: {script} ===\n")
 
-    # Skip missing scripts safely
     if not os.path.isfile(script_path):
         print(f"⚠️ Skipped (file not found): {script}")
         continue
@@ -91,16 +68,13 @@ for script in scripts:
         )
         print(f"✅ Finished: {script_name}")
 
-        # ✅ Commit AFTER this script finishes
-        commit_txt_files()
+        commit_progress()
 
     except subprocess.CalledProcessError as e:
         print(f"❌ Script failed: {script_name}\n{e}")
-
-        # Still try to commit whatever progress happened
-        commit_txt_files()
+        commit_progress()
 
     print("⏳ Waiting 60 seconds before next script...\n")
     time.sleep(60)
 
-print("\n🏁 Run finished (completed / skipped / stopped by time limit).")
+print("\n🏁 Run finished.")
