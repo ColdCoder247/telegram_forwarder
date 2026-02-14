@@ -1,20 +1,18 @@
 import asyncio
 import os
 import random
+import subprocess
 from telethon import TelegramClient, errors
 from hashlib import md5
 from datetime import datetime
 
 # ================= CONFIG =================
 
-try:
-    api_id = int(os.getenv("TG_API_ID"))
-    api_hash = os.getenv("TG_API_HASH")
-except Exception:
-    raise ValueError("❌ TG_API_ID or TG_API_HASH not set properly in environment variables.")
+api_id = int(os.getenv("TG_API_ID"))
+api_hash = os.getenv("TG_API_HASH")
 
 if not api_id or not api_hash:
-    raise ValueError("❌ Missing Telegram API credentials in GitHub Secrets.")
+    raise ValueError("❌ Missing Telegram API credentials.")
 
 source_group = '-1002394425543'
 destination_groups = ['@JK_HDSGIJ_HPUHSA_mfdgsdgjkhiuahs']
@@ -27,14 +25,25 @@ max_delay = 15
 pause_every = 35
 pause_time = 300
 
+checkpoint_every = 5  # 🔥 checkpoint every 20 messages
+
 hashes_file = 'forwarded_hashes.txt'
-log_file = 'forward_log.txt'
-duplicates_file = 'duplicates_log.txt'
 resume_file = 'last_message_id.txt'
 
 forwarded_hashes = set()
 
 # ================= UTILITIES =================
+
+def git_checkpoint():
+    try:
+        subprocess.run(["git", "add", "."], check=True)
+        result = subprocess.run(["git", "diff", "--cached", "--quiet"])
+        if result.returncode != 0:
+            subprocess.run(["git", "commit", "-m", "Auto-checkpoint"], check=True)
+            subprocess.run(["git", "push"], check=True)
+            print("💾 Mid-run checkpoint committed")
+    except Exception as e:
+        print(f"⚠️ Checkpoint failed: {e}")
 
 def load_hashes():
     if os.path.exists(hashes_file):
@@ -45,9 +54,15 @@ def save_hash(msg_hash):
     with open(hashes_file, 'a', encoding='utf-8') as f:
         f.write(msg_hash + '\n')
 
-def log(file, msg):
-    with open(file, 'a', encoding='utf-8') as f:
-        f.write(f"[{datetime.now()}] {msg}\n")
+def load_last_id():
+    if os.path.exists(resume_file):
+        with open(resume_file, 'r') as f:
+            return int(f.read().strip())
+    return 0
+
+def save_last_id(message_id):
+    with open(resume_file, 'w') as f:
+        f.write(str(message_id))
 
 def hash_message(message):
     if message.text:
@@ -63,16 +78,6 @@ def is_sticker(message):
         return True
     return False
 
-def load_last_id():
-    if os.path.exists(resume_file):
-        with open(resume_file, 'r') as f:
-            return int(f.read().strip())
-    return 0
-
-def save_last_id(message_id):
-    with open(resume_file, 'w') as f:
-        f.write(str(message_id))
-
 # ================= CLIENT =================
 
 client = TelegramClient('forward_session', api_id, api_hash)
@@ -80,29 +85,13 @@ client = TelegramClient('forward_session', api_id, api_hash)
 async def forward_history():
     load_hashes()
     await client.start()
-    print("✅ Bot started")
 
-    try:
-        source_entity = await client.get_entity(int(source_group)) \
-            if source_group.startswith("-100") else await client.get_entity(source_group)
-    except Exception as e:
-        print(f"❌ Source resolve failed: {e}")
-        return
+    source_entity = await client.get_entity(int(source_group)) \
+        if source_group.startswith("-100") else await client.get_entity(source_group)
 
-    resolved_destinations = []
-    for dest in destination_groups:
-        try:
-            entity = await client.get_entity(dest)
-            resolved_destinations.append(entity)
-        except Exception as e:
-            print(f"❌ Destination resolve failed: {e}")
-
-    if not resolved_destinations:
-        print("❌ No valid destinations.")
-        return
-
-    for dest in resolved_destinations:
-        await client.send_message(dest, f"======= Started {channel}")
+    resolved_destinations = [
+        await client.get_entity(dest) for dest in destination_groups
+    ]
 
     forwarded_count = 0
     last_forwarded_id = load_last_id()
@@ -114,14 +103,10 @@ async def forward_history():
     ):
 
         if is_sticker(message):
-            log(duplicates_file, "Skipped sticker")
             continue
 
         msg_hash = hash_message(message)
-        if not msg_hash:
-            continue
-
-        if msg_hash in forwarded_hashes:
+        if not msg_hash or msg_hash in forwarded_hashes:
             continue
 
         success = False
@@ -131,22 +116,16 @@ async def forward_history():
                 await asyncio.sleep(random.uniform(min_delay, max_delay))
 
                 if message.media:
-                    await client.send_file(
-                        dest,
-                        message.media,
-                        caption=message.text or ''
-                    )
+                    await client.send_file(dest, message.media, caption=message.text or '')
                 else:
                     await client.send_message(dest, message.text)
 
-                log(log_file, f"Forwarded to {dest.id}: {message.id}")
                 success = True
 
             except errors.FloodWaitError as e:
-                print(f"⏳ FloodWait {e.seconds}s")
                 await asyncio.sleep(e.seconds + 5)
-            except Exception as e:
-                log(log_file, f"Failed for {dest.id}: {e}")
+            except Exception:
+                pass
 
         if success:
             forwarded_hashes.add(msg_hash)
@@ -154,16 +133,14 @@ async def forward_history():
             save_last_id(message.id)
             forwarded_count += 1
 
+            # 🔥 Mid-run checkpoint
+            if forwarded_count % checkpoint_every == 0:
+                git_checkpoint()
+
         if forwarded_count and forwarded_count % pause_every == 0:
-            print(f"⏸ Pausing {pause_time}s")
             await asyncio.sleep(pause_time)
 
-    for dest in resolved_destinations:
-        await client.send_message(dest, f"Till Now Done {channel}")
-
-    print(f"🎉 Done. Total forwarded: {forwarded_count}")
-
-# ================= RUN =================
+    print(f"🎉 Done. Forwarded: {forwarded_count}")
 
 try:
     client.loop.run_until_complete(forward_history())
