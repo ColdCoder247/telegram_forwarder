@@ -47,7 +47,7 @@ def save_progress(message_id):
 # ==============================
 
 async def main():
-    client = TelegramClient("session", api_id, api_hash)
+    client = TelegramClient("forward_session", api_id, api_hash)
     await client.start()
 
     # 🔹 Load last saved ID safely
@@ -117,3 +117,4 @@ async def main():
 # ==============================
 
 asyncio.run(main())
+
