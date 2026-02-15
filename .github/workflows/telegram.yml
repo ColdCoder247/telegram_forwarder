@@ -2,8 +2,8 @@ name: Telegram Forwarder
 
 on:
   schedule:
-    - cron: "0 1 * * *"    # 06:30 AM IST
-    - cron: "0 13 * * *"   # 06:30 PM IST
+    - cron: "30 0 * * *"    # 06:00 AM IST
+    - cron: "30 12 * * *"   # 06:00 PM IST
   workflow_dispatch:
 
 permissions:
@@ -12,12 +12,11 @@ permissions:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
+    timeout-minutes: 350   # 5h 50m safety (under GitHub 6h limit)
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -29,8 +28,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Scripts
-        run: python run_all.py
+      - name: Run Forwarder
+        run: python3 run_all.py
         env:
           TG_API_ID: ${{ secrets.TG_API_ID }}
           TG_API_HASH: ${{ secrets.TG_API_HASH }}
