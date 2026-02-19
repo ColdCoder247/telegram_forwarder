@@ -45,10 +45,7 @@ def safe_commit():
         result = subprocess.run(["git", "diff", "--cached", "--quiet"])
 
         if result.returncode != 0:
-            subprocess.run(
-                ["git", "commit", "-m", "Auto update progress"],
-                check=True
-            )
+            subprocess.run(["git", "commit", "-m", "Auto update progress"], check=True)
             subprocess.run(["git", "push"], check=True)
             print("💾 Progress committed")
         else:
@@ -97,19 +94,13 @@ async def forward_history():
     await client.start()
     print("✅ Bot started")
 
-    # Resolve source entity
-    if source_group.startswith("-100"):
-        source_entity = await client.get_input_entity(int(source_group))
-    else:
-        source_entity = await client.get_entity(source_group)
+    source_entity = await client.get_input_entity(int(source_group))
 
-    # Resolve destination entities
     resolved_destinations = []
     for dest in destination_groups:
         entity = await client.get_entity(dest)
         resolved_destinations.append(entity)
 
-    # Send start message
     for dest in resolved_destinations:
         await client.send_message(dest, f"======= Started {channel}")
 
@@ -130,33 +121,63 @@ async def forward_history():
             log(duplicates_file, "Skipped duplicate")
             continue
 
-        # Only forward video files (skip images/stickers/logos)
-        if not (message.document and
-                message.document.mime_type and
-                message.document.mime_type.startswith("video")):
+        should_forward_file = False
+        send_text_only = False
+
+        # ✅ Case 1: Video files
+        if message.document and message.document.mime_type and \
+           message.document.mime_type.startswith("video"):
+            should_forward_file = True
+
+        # ✅ Case 2: Large archive parts (.zip, .001, etc.)
+        elif message.document and message.document.size and \
+             message.document.size > 200 * 1024 * 1024:
+            should_forward_file = True
+
+        # ✅ Case 3: Text posts with links
+        elif message.text and "http" in message.text:
+            send_text_only = True
+
+        else:
             continue
 
         for dest in resolved_destinations:
             try:
                 await asyncio.sleep(random.uniform(min_delay, max_delay))
 
-                # Preserve thumbnail if exists
-                if getattr(message.document, 'thumbs', None):
-                    thumb = message.document.thumbs[0] if message.document.thumbs else None
-                    if thumb:
-                        await client.send_file(dest, message.document, caption=message.text or '', thumb=thumb)
-                    else:
-                        await client.send_file(dest, message.document, caption=message.text or '')
-                else:
-                    await client.send_file(dest, message.document, caption=message.text or '')
+                if should_forward_file:
 
-                log(log_file, f"Sent video {message.id} to {dest.id}")
-                print(f"✅ Sent video: {message.id}")
+                    thumb_path = None
 
+                    # 🔥 Preserve thumbnail
+                    if getattr(message.document, "thumbs", None):
+                        try:
+                            largest_thumb = message.document.thumbs[-1]
+                            thumb_path = await client.download_media(largest_thumb)
+                        except Exception:
+                            thumb_path = None
+
+                    await client.send_file(
+                        dest,
+                        message.document,
+                        caption=message.text or '',
+                        thumb=thumb_path,
+                        supports_streaming=True
+                    )
+
+                    if thumb_path and os.path.exists(thumb_path):
+                        os.remove(thumb_path)
+
+                    print(f"✅ Sent file: {message.id}")
+
+                elif send_text_only:
+                    await client.send_message(dest, message.text)
+                    print(f"✅ Sent text: {message.id}")
+
+                log(log_file, f"Forwarded {message.id}")
                 save_last_id(message.id)
                 forwarded_count += 1
 
-                # Commit every 15 videos
                 if forwarded_count % 15 == 0:
                     safe_commit()
 
@@ -165,24 +186,20 @@ async def forward_history():
                 await asyncio.sleep(e.seconds + 5)
 
             except Exception as e:
-                print(f"❌ Error forwarding: {e}")
+                print(f"❌ Error: {e}")
                 log(log_file, f"Error: {e}")
 
         forwarded_hashes.add(msg_hash)
         save_hash(msg_hash)
 
-        # Auto pause
         if forwarded_count % pause_every == 0:
             print(f"⏸ Pausing for {pause_time // 60} minutes...")
             await asyncio.sleep(pause_time)
 
-    # Send completion message
     for dest in resolved_destinations:
         await client.send_message(dest, f"Till Now Done {channel}")
 
-    # Final commit
     safe_commit()
-
     print(f"🎉 Done forwarding {forwarded_count} message(s).")
 
 # ================= RUN =================
