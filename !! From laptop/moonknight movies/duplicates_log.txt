@@ -17826,3 +17826,13 @@ Audio🔊:- ****#Portuguese**** HE-AAC 5.1
 [2026-02-19 19:10:52.044354] Skipped duplicate
 [2026-02-19 19:10:52.044471] Skipped duplicate
 [2026-02-19 19:10:52.044562] Skipped duplicate
+[2026-02-19 19:11:33.560028] Skipped duplicate
+[2026-02-19 19:11:48.374915] Skipped duplicate
+[2026-02-19 19:11:48.375061] Skipped duplicate
+[2026-02-19 19:11:48.375176] Skipped duplicate
+[2026-02-19 19:11:48.375253] Skipped duplicate
+[2026-02-19 19:11:48.375328] Skipped duplicate
+[2026-02-19 19:11:48.375401] Skipped duplicate
+[2026-02-19 19:11:48.375464] Skipped duplicate
+[2026-02-19 19:12:03.061079] Skipped duplicate
+[2026-02-19 19:12:51.589256] Skipped duplicate
