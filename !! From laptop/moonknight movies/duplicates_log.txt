@@ -17872,3 +17872,12 @@ Audio🔊:- ****#Portuguese**** HE-AAC 5.1
 [2026-02-19 19:48:20.693422] Skipped duplicate
 [2026-02-19 19:49:10.909616] Skipped duplicate
 [2026-02-19 19:49:56.426398] Skipped duplicate
+[2026-02-19 19:50:40.755630] Skipped duplicate
+[2026-02-19 19:51:25.527546] Skipped duplicate
+[2026-02-19 19:51:56.670186] Skipped duplicate
+[2026-02-19 19:51:56.670281] Skipped duplicate
+[2026-02-19 19:51:56.670365] Skipped duplicate
+[2026-02-19 19:51:56.670443] Skipped duplicate
+[2026-02-19 19:51:56.670507] Skipped duplicate
+[2026-02-19 19:52:10.446194] Skipped duplicate
+[2026-02-19 19:57:58.628379] Skipped duplicate
