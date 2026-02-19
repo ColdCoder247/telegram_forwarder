@@ -1,6 +1,7 @@
 import asyncio
 import os
 import random
+import subprocess
 from telethon import TelegramClient, errors
 from hashlib import md5
 from datetime import datetime
@@ -28,6 +29,30 @@ resume_file = 'last_message_id.txt'
 forwarded_hashes = set()
 
 client = TelegramClient('forward_session', api_id, api_hash)
+
+# ================= SAFE COMMIT =================
+
+def safe_commit():
+    try:
+        subprocess.run(["git", "config", "--global", "user.name", "github-actions"])
+        subprocess.run(["git", "config", "--global", "user.email", "actions@github.com"])
+
+        subprocess.run(["git", "add", resume_file, hashes_file, log_file, duplicates_file])
+
+        result = subprocess.run(["git", "diff", "--cached", "--quiet"])
+
+        if result.returncode != 0:
+            subprocess.run(
+                ["git", "commit", "-m", "Auto update progress"],
+                check=True
+            )
+            subprocess.run(["git", "push"], check=True)
+            print("💾 Progress committed")
+        else:
+            print("ℹ️ No changes to commit")
+
+    except Exception as e:
+        print(f"⚠️ Commit failed: {e}")
 
 # ================= HELPERS =================
 
@@ -69,19 +94,16 @@ async def forward_history():
     await client.start()
     print("✅ Bot started")
 
-    # Resolve source
     if source_group.startswith("-100"):
         source_entity = await client.get_input_entity(int(source_group))
     else:
         source_entity = await client.get_entity(source_group)
 
-    # Resolve destinations
     resolved_destinations = []
     for dest in destination_groups:
         entity = await client.get_entity(dest)
         resolved_destinations.append(entity)
 
-    # Send start message
     for dest in resolved_destinations:
         await client.send_message(dest, f"======= Started {channel}")
 
@@ -102,7 +124,6 @@ async def forward_history():
             log(duplicates_file, "Skipped duplicate")
             continue
 
-        # 🔥 Only forward VIDEO files (skip images/logos/stickers)
         if not (message.document and 
                 message.document.mime_type and 
                 message.document.mime_type.startswith("video")):
@@ -112,7 +133,6 @@ async def forward_history():
             try:
                 await asyncio.sleep(random.uniform(min_delay, max_delay))
 
-                # Preserve thumbnail if exists
                 if getattr(message.document, 'thumbs', None):
                     thumb = message.document.thumbs[0] if message.document.thumbs else None
                     if thumb:
@@ -127,6 +147,10 @@ async def forward_history():
 
                 save_last_id(message.id)
                 forwarded_count += 1
+
+                # Commit every 15 videos
+                if forwarded_count % 15 == 0:
+                    safe_commit()
 
             except errors.FloodWaitError as e:
                 print(f"⏳ Flood wait: sleeping {e.seconds} seconds")
@@ -143,9 +167,11 @@ async def forward_history():
             print(f"⏸ Pausing for {pause_time // 60} minutes...")
             await asyncio.sleep(pause_time)
 
-    # Send completion message
     for dest in resolved_destinations:
         await client.send_message(dest, f"Till Now Done {channel}")
+
+    # Final commit at script end
+    safe_commit()
 
     print(f"🎉 Done forwarding {forwarded_count} message(s).")
 
