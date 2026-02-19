@@ -1,33 +1,63 @@
 import asyncio
 import os
 import random
+import subprocess
 from telethon import TelegramClient, errors
+from telethon.sessions import StringSession
 from hashlib import md5
 from datetime import datetime
 
-# === CONFIG ===
-api_id = 25207645
-api_hash = '0a1e4359661414bd09455120935ebecd'
-source_group = '-1001945247286'  # Use @username or group ID
+# ================= CONFIG =================
+
+api_id = int(os.getenv("TG_API_ID"))
+api_hash = os.getenv("TG_API_HASH")
+string_session = os.getenv("TG_STRING_SESSION")
+
+source_group = '-1001945247286'
 destination_groups = ['@JK_HDSGIJ_HPUHSA_mfdgsdgjkhiuahs']
 
-# Added channel variable
 channel = "Hindi FHD Series"
 
-# Safe delay between messages
 min_delay = 8
 max_delay = 15
 
-# Pause every N messages
-pause_every = 78
-pause_time = 300  # seconds (5 minutes)
+pause_every = 35
+pause_time = 300  # seconds
 
-# File paths
 hashes_file = 'forwarded_hashes.txt'
 log_file = 'forward_log.txt'
 duplicates_file = 'duplicates_log.txt'
 resume_file = 'last_message_id.txt'
+
 forwarded_hashes = set()
+
+client = TelegramClient(StringSession(string_session), api_id, api_hash)
+
+# ================= SAFE COMMIT =================
+
+def safe_commit():
+    try:
+        subprocess.run(["git", "config", "--global", "user.name", "github-actions"])
+        subprocess.run(["git", "config", "--global", "user.email", "actions@github.com"])
+
+        subprocess.run(["git", "add", resume_file, hashes_file, log_file, duplicates_file])
+
+        result = subprocess.run(["git", "diff", "--cached", "--quiet"])
+
+        if result.returncode != 0:
+            subprocess.run(
+                ["git", "commit", "-m", "Auto update progress"],
+                check=True
+            )
+            subprocess.run(["git", "push"], check=True)
+            print("💾 Progress committed")
+        else:
+            print("ℹ️ No changes to commit")
+
+    except Exception as e:
+        print(f"⚠️ Commit failed: {e}")
+
+# ================= HELPERS =================
 
 def load_hashes():
     if os.path.exists(hashes_file):
@@ -50,123 +80,112 @@ def hash_message(message):
         return f"{message.media.__class__.__name__}_{message.id}"
     return None
 
-def is_sticker(message):
-    if message.sticker:
-        return True
-    if message.document and message.document.mime_type in ['image/webp', 'application/x-tgsticker']:
-        return True
-    return False
-
 def load_last_id():
     if os.path.exists(resume_file):
         with open(resume_file, 'r') as f:
             return int(f.read().strip())
-    return None
+    return 0
 
 def save_last_id(message_id):
     with open(resume_file, 'w') as f:
         f.write(str(message_id))
 
-client = TelegramClient('forward_session', api_id, api_hash)
+# ================= MAIN =================
 
 async def forward_history():
     load_hashes()
     await client.start()
-    print("✅ Bot started: Fetching full history...")
+    print("✅ Bot started")
 
-    # ✅ FIXED: Corrected source group resolution using get_input_entity
-    try:
-        if source_group.startswith("-100"):
-            source_entity = await client.get_input_entity(int(source_group))
-        else:
-            source_entity = await client.get_entity(source_group)
-        print(f"📌 Reading messages from: {getattr(source_entity, 'title', str(source_entity))}")
-    except Exception as e:
-        print(f"❌ Failed to resolve source: {e}")
-        return
+    # Resolve source entity
+    if source_group.startswith("-100"):
+        source_entity = await client.get_input_entity(int(source_group))
+    else:
+        source_entity = await client.get_entity(source_group)
 
-    # Resolve destination group(s)
+    # Resolve destination entities
     resolved_destinations = []
     for dest in destination_groups:
-        try:
-            entity = await client.get_entity(dest)
-            resolved_destinations.append(entity)
-            print(f"✅ Destination ready: {getattr(entity, 'title', str(entity.id))}")
-        except Exception as e:
-            print(f"❌ Failed to resolve destination '{dest}': {e}")
+        entity = await client.get_entity(dest)
+        resolved_destinations.append(entity)
 
-    if not resolved_destinations:
-        print("❌ No valid destinations. Exiting.")
-        return
-
-    # ✅ Send "Started" message before forwarding
+    # Send start message
     for dest in resolved_destinations:
-        try:
-            await client.send_message(dest, f"======= Started {channel}")
-        except Exception as e:
-            print(f"❌ Failed to send start message to {dest.id}: {e}")
+        await client.send_message(dest, f"======= Started {channel}")
 
-    forwarded_count = 0
     last_forwarded_id = load_last_id()
+    forwarded_count = 0
 
-    async for message in client.iter_messages(source_entity, reverse=True, offset_id=last_forwarded_id or 0):
-        if is_sticker(message):
-            log(duplicates_file, "Skipped sticker message")
-            continue
+    async for message in client.iter_messages(
+            source_entity,
+            min_id=last_forwarded_id,
+            reverse=True
+    ):
 
         msg_hash = hash_message(message)
         if not msg_hash:
             continue
 
         if msg_hash in forwarded_hashes:
-            log(duplicates_file, f"Skipped duplicate: {message.text or 'Media'}")
+            log(duplicates_file, "Skipped duplicate")
+            continue
+
+        # Only forward video files (skip images/stickers/logos)
+        if not (message.document and
+                message.document.mime_type and
+                message.document.mime_type.startswith("video")):
             continue
 
         for dest in resolved_destinations:
             try:
                 await asyncio.sleep(random.uniform(min_delay, max_delay))
 
-                if message.media:
-                    # ✅ Preserve thumbnail only if already embedded (no extra download)
-                    if hasattr(message.media, 'document') and getattr(message.media.document, 'thumbs', None):
-                        thumb = message.media.document.thumbs[0] if message.media.document.thumbs else None
-                        if thumb:
-                            await client.send_file(dest, message.media, caption=message.text or '', thumb=thumb)
-                        else:
-                            await client.send_file(dest, message.media, caption=message.text or '')
+                # Preserve thumbnail if exists
+                if getattr(message.document, 'thumbs', None):
+                    thumb = message.document.thumbs[0] if message.document.thumbs else None
+                    if thumb:
+                        await client.send_file(dest, message.document, caption=message.text or '', thumb=thumb)
                     else:
-                        await client.send_file(dest, message.media, caption=message.text or '')
+                        await client.send_file(dest, message.document, caption=message.text or '')
                 else:
-                    await client.send_message(dest, message.text)
+                    await client.send_file(dest, message.document, caption=message.text or '')
 
-                log(log_file, f"Forwarded to {dest.id}: {message.text or 'Media'}")
-                print(f"✅ Forwarded message: {message.text or 'Media'}")
-                forwarded_count += 1
+                log(log_file, f"Sent video {message.id} to {dest.id}")
+                print(f"✅ Sent video: {message.id}")
+
                 save_last_id(message.id)
+                forwarded_count += 1
+
+                # Commit every 15 videos
+                if forwarded_count % 15 == 0:
+                    safe_commit()
 
             except errors.FloodWaitError as e:
                 print(f"⏳ Flood wait: sleeping {e.seconds} seconds")
                 await asyncio.sleep(e.seconds + 5)
+
             except Exception as e:
-                print(f"❌ Error forwarding to {dest.id}: {e}")
-                log(log_file, f"Failed to forward to {dest.id}: {e}")
+                print(f"❌ Error forwarding: {e}")
+                log(log_file, f"Error: {e}")
 
         forwarded_hashes.add(msg_hash)
         save_hash(msg_hash)
 
-        # ⏸ Auto-pause after N messages
+        # Auto pause
         if forwarded_count % pause_every == 0:
-            print(f"⏸ Pausing for {pause_time // 60} minutes to avoid flood detection...")
+            print(f"⏸ Pausing for {pause_time // 60} minutes...")
             await asyncio.sleep(pause_time)
 
-    # ✅ Send the "Till Now Done" message
+    # Send completion message
     for dest in resolved_destinations:
-        try:
-            await client.send_message(dest, f"Till Now Done {channel}")
-        except Exception as e:
-            print(f"❌ Failed to send completion message to {dest.id}: {e}")
+        await client.send_message(dest, f"Till Now Done {channel}")
+
+    # Final commit
+    safe_commit()
 
     print(f"🎉 Done forwarding {forwarded_count} message(s).")
+
+# ================= RUN =================
 
 try:
     client.loop.run_until_complete(forward_history())
