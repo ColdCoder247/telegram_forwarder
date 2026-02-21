@@ -7,6 +7,11 @@ on:
     - cron: "30 16 * * *"   # 10:00 PM IST
   workflow_dispatch:
 
+# 🔒 Prevent Parallel Runs (Added Only This Block)
+concurrency:
+  group: telegram-forwarder
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
@@ -35,4 +40,3 @@ jobs:
           TG_API_ID: ${{ secrets.TG_API_ID }}
           TG_API_HASH: ${{ secrets.TG_API_HASH }}
           TG_STRING_SESSION: ${{ secrets.TG_STRING_SESSION }}
-
