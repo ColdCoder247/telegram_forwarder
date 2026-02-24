@@ -22969,3 +22969,8 @@ Note :- English Dub Not Available For Episode 11 & 12
 [2026-02-24 11:46:33.058233] Skipped duplicate
 [2026-02-24 11:46:33.058330] Skipped duplicate
 [2026-02-24 11:48:35.320153] Skipped duplicate
+[2026-02-24 11:50:35.080671] Skipped duplicate
+[2026-02-24 11:50:35.080759] Skipped duplicate
+[2026-02-24 11:50:35.080824] Skipped duplicate
+[2026-02-24 11:52:02.520383] Skipped duplicate
+[2026-02-24 11:52:02.520456] Skipped duplicate
