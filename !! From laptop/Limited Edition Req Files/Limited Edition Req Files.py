@@ -16,7 +16,7 @@ string_session = os.getenv("TG_STRING_SESSION")
 source_group = '-1002603909425'
 destination_groups = ['@JK_HDSGIJ_HPUHSA_mfdgsdgjkhiuahs']
 
-channel = "MoonKnight Prime Movies"
+channel = "Limited Edition Req Files"
 
 min_delay = 8
 max_delay = 15
@@ -208,3 +208,4 @@ try:
     client.loop.run_until_complete(forward_history())
 except KeyboardInterrupt:
     print("\n🛑 Bot stopped by user.")
+
