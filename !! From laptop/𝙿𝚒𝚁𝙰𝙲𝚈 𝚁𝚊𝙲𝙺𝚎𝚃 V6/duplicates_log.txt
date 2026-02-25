@@ -1,0 +1,7 @@
+[2025-07-24 10:13:46.327596] Skipped sticker message
+[2025-10-10 23:28:44.567822] Skipped duplicate: https://youtu.be/UPFRItMOgPo
+[2025-10-11 07:11:23.614826] Skipped duplicate: https://youtu.be/UPFRItMOgPo
+[2025-10-11 12:26:09.608189] Skipped duplicate: https://youtu.be/UPFRItMOgPo
+[2025-10-12 11:48:37.078450] Skipped duplicate: https://youtu.be/UPFRItMOgPo
+[2025-11-28 18:16:18.981681] Skipped duplicate: https://t.me/+r6sWinUuNnFlNzY1
+[2025-11-28 20:38:18.487054] Skipped duplicate: https://t.me/+r6sWinUuNnFlNzY1
