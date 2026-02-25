@@ -8,21 +8,16 @@ from zoneinfo import ZoneInfo
 # ================= CONFIG =================
 
 BASE_DIR = os.getcwd()
+IST = ZoneInfo("Asia/Kolkata")
 
-# Max runtime: 5 hours 30 minutes
 START_RUNTIME = time.time()
 MAX_RUNTIME = (5 * 60 * 60) + (30 * 60)
 
-# IST Timezone
-IST = ZoneInfo("Asia/Kolkata")
-
-# Telegram Credentials (Add in GitHub Secrets)
 BOT_TOKEN = os.getenv("TG_BOT_TOKEN")
 CHAT_ID = os.getenv("TG_CHAT_ID")
 
-# Enable / disable scripts freely
 scripts = [
-    "!! From laptop/𝙿𝚒𝚁𝙰𝙲𝚈 𝚁𝚊𝙲𝙺𝚎𝚃 V6/piracy.py",
+    "!! From laptop/𝙿𝚒𝚁𝙰𝙲𝚈 𝚁𝚊𝙲𝚔𝚎𝚃 V6/piracy.py",
     "!! From laptop/All In ONE ~ TG Files/allinone.py",
     "!! From laptop/Moonknight  Drama/moonknightdrama.py",
     "!! From laptop/Hindi FHD Collections/Hindi FHD Collections.py",
@@ -33,38 +28,34 @@ scripts = [
     "!! From laptop/moonknight series/moonseries.py",
 ]
 
-# ================= TELEGRAM FUNCTION =================
+# ================= TELEGRAM =================
 
-def send_telegram(message):
+def send_message(text):
     if not BOT_TOKEN or not CHAT_ID:
-        print("Telegram credentials missing.")
         return
-
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
-    payload = {
+    requests.post(url, data={
         "chat_id": CHAT_ID,
-        "text": message,
+        "text": text,
         "parse_mode": "HTML"
-    }
+    })
 
-    try:
-        requests.post(url, data=payload, timeout=15)
-    except Exception as e:
-        print("Telegram send failed:", e)
-
-# ================= HELPER FUNCTION =================
+def send_file(filepath):
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendDocument"
+    with open(filepath, "rb") as f:
+        requests.post(url, data={"chat_id": CHAT_ID}, files={"document": f})
 
 def format_duration(seconds):
-    hours, remainder = divmod(int(seconds), 3600)
-    minutes, seconds = divmod(remainder, 60)
-    return f"{hours:02}:{minutes:02}:{seconds:02}"
+    h, r = divmod(int(seconds), 3600)
+    m, s = divmod(r, 60)
+    return f"{h:02}:{m:02}:{s:02}"
 
-# ================= START GLOBAL =================
+# ================= START MESSAGE =================
 
 global_start = datetime.now(IST)
 
-send_telegram(
-    f"🚀 <b>Run Started</b>\n\n"
+send_message(
+    f"🚀 <b>Run Started</b>\n"
     f"🕒 {global_start.strftime('%d-%m-%Y %I:%M:%S %p IST')}"
 )
 
@@ -72,83 +63,78 @@ send_telegram(
 
 for script in scripts:
 
-    # Stop if time exceeded
     if time.time() - START_RUNTIME >= MAX_RUNTIME:
-        now_ist = datetime.now(IST)
-        send_telegram(
-            f"⏹️ <b>Time Limit Reached</b>\n\n"
-            f"🕒 {now_ist.strftime('%d-%m-%Y %I:%M:%S %p IST')}"
-        )
+        send_message("⏹️ <b>Time Limit Reached</b>")
         break
 
     script_path = os.path.join(BASE_DIR, script)
     script_dir = os.path.dirname(script_path)
     script_name = os.path.basename(script_path)
 
-    print(f"\n=== Running: {script} ===\n")
-
     if not os.path.isfile(script_path):
-        send_telegram(f"⚠️ <b>File Not Found:</b> {script_name}")
+        send_message(f"⚠️ File Not Found: {script_name}")
         continue
 
     start_time = datetime.now(IST)
     start_timer = time.time()
 
-    try:
-        result = subprocess.run(
+    log_file = f"{script_name.replace('.py','')}_log.txt"
+
+    with open(log_file, "w", encoding="utf-8") as log:
+
+        log.write("=========================================\n")
+        log.write(f"SCRIPT NAME : {script_name}\n")
+        log.write(f"START TIME  : {start_time.strftime('%d-%m-%Y %I:%M:%S %p IST')}\n")
+        log.write("=========================================\n\n")
+
+        process = subprocess.Popen(
             ["python3", script_name],
             cwd=script_dir,
-            capture_output=True,
-            text=True
+            stdout=log,
+            stderr=log
+        )
+        process.wait()
+
+    end_time = datetime.now(IST)
+    duration = format_duration(time.time() - start_timer)
+
+    with open(log_file, "a", encoding="utf-8") as log:
+        log.write("\n=========================================\n")
+        log.write(f"END TIME    : {end_time.strftime('%d-%m-%Y %I:%M:%S %p IST')}\n")
+        log.write(f"DURATION    : {duration}\n")
+        log.write(f"STATUS      : {'SUCCESS' if process.returncode == 0 else 'FAILED'}\n")
+        log.write("=========================================\n")
+
+    # Telegram message (separate from log file)
+    if process.returncode == 0:
+        send_message(
+            f"✅ <b>Script Completed</b>\n\n"
+            f"📂 {script_name}\n"
+            f"🕒 Start: {start_time.strftime('%d-%m-%Y %I:%M:%S %p IST')}\n"
+            f"🕒 End: {end_time.strftime('%d-%m-%Y %I:%M:%S %p IST')}\n"
+            f"⏱ Duration: {duration}"
+        )
+    else:
+        send_message(
+            f"❌ <b>Script Failed</b>\n\n"
+            f"📂 {script_name}\n"
+            f"🕒 Start: {start_time.strftime('%d-%m-%Y %I:%M:%S %p IST')}\n"
+            f"🕒 End: {end_time.strftime('%d-%m-%Y %I:%M:%S %p IST')}\n"
+            f"⏱ Duration: {duration}"
         )
 
-        end_time = datetime.now(IST)
-        duration_seconds = time.time() - start_timer
-        duration_str = format_duration(duration_seconds)
+    send_file(log_file)
 
-        start_str = start_time.strftime("%d-%m-%Y %I:%M:%S %p IST")
-        end_str = end_time.strftime("%d-%m-%Y %I:%M:%S %p IST")
-
-        # Limit logs to avoid Telegram 4096 character limit
-        logs = (result.stdout + "\n" + result.stderr)[-3500:]
-
-        if result.returncode == 0:
-            message = (
-                f"✅ <b>Script Completed</b>\n\n"
-                f"📂 {script_name}\n\n"
-                f"🕒 Start: {start_str}\n"
-                f"🕒 End: {end_str}\n"
-                f"⏱ Duration: {duration_str}\n\n"
-                f"📝 Logs:\n<pre>{logs}</pre>"
-            )
-        else:
-            message = (
-                f"❌ <b>Script Failed</b>\n\n"
-                f"📂 {script_name}\n\n"
-                f"🕒 Start: {start_str}\n"
-                f"🕒 End: {end_str}\n"
-                f"⏱ Duration: {duration_str}\n\n"
-                f"⚠️ Error Logs:\n<pre>{logs}</pre>"
-            )
-
-        send_telegram(message)
-
-    except Exception as e:
-        send_telegram(f"❌ <b>Critical Error in {script_name}</b>\n\n{str(e)}")
-
-    print("⏳ Waiting 60 seconds before next script...\n")
     time.sleep(60)
 
-# ================= FINAL SUMMARY =================
+# ================= FINAL =================
 
 global_end = datetime.now(IST)
 total_runtime = format_duration(time.time() - START_RUNTIME)
 
-send_telegram(
+send_message(
     f"🏁 <b>All Scripts Finished</b>\n\n"
     f"🕒 Started: {global_start.strftime('%d-%m-%Y %I:%M:%S %p IST')}\n"
     f"🕒 Ended: {global_end.strftime('%d-%m-%Y %I:%M:%S %p IST')}\n"
     f"⏱ Total Runtime: {total_runtime}"
 )
-
-print("\n🏁 Run finished.")
