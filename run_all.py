@@ -26,6 +26,7 @@ scripts = [
     "!! From laptop/Limited Edition Req Files/Limited Edition Req Files.py",
     "!! From laptop/moonknight movies/moonmovies.py",
     "!! From laptop/moonknight series/moonseries.py",
+    "!! From laptop/𝐑𝐉 𝐌𝐨𝐯𝐢𝐞 & 𝐒𝐞𝐫𝐢𝐞𝐬 𝐒𝐭𝐮𝐝𝐢𝐨/𝐑𝐉𝐌𝐨𝐯𝐢𝐞𝐒𝐞𝐫𝐢𝐞𝐬𝐒𝐭𝐮𝐝𝐢𝐨.py",
 ]
 
 # ================= TELEGRAM =================
