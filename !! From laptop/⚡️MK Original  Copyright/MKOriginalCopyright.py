@@ -13,10 +13,10 @@ api_id = int(os.getenv("TG_API_ID"))
 api_hash = os.getenv("TG_API_HASH")
 string_session = os.getenv("TG_STRING_SESSION")
 
-source_group = '-1001199298649'
+source_group = '-1002721343971'
 destination_groups = ['@JK_HDSGIJ_HPUHSA_mfdgsdgjkhiuahs']
 
-channel = "All In ONE ~ TG Files"
+channel = "⚡️MK Original  Copyright"
 
 min_delay = 8
 max_delay = 15
@@ -208,4 +208,5 @@ try:
     client.loop.run_until_complete(forward_history())
 except KeyboardInterrupt:
     print("\n🛑 Bot stopped by user.")
+
 
