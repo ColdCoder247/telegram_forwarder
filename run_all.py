@@ -31,6 +31,7 @@ scripts = [
     "!! From laptop/⚡️MK Original  Copyright/MKOriginalCopyright.py",
     "!! From laptop/LIMITED EDITION 3.0/LimitedEdition3.py",
     "!! From laptop/BETA FiLES/BETA FiLES.py"
+    "!! From laptop/KiNG ~ SuxClub/KiNG ~ SuxClub.py"
 ]
 
 # ================= TELEGRAM =================
