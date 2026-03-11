@@ -33,6 +33,7 @@ scripts = [
     "!! From laptop/BETA FiLES/BETA FiLES.py"
     "!! From laptop/KiNG ~ SuxClub/KiNG ~ SuxClub.py"
     "!! From laptop/NETFLIX  Mu - Original/NETFLIX  Mu - Original.py"
+    "!! From laptop/PPKM0ViEs/PPKM0ViEs.py"
 ]
 
 # ================= TELEGRAM =================
