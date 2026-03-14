@@ -16,7 +16,7 @@ string_session = os.getenv("TG_STRING_SESSION")
 source_group = '-1003471161229'
 destination_groups = ['@JK_HDSGIJ_HPUHSA_mfdgsdgjkhiuahs']
 
-channel = "BETA FiLES
+channel = "BETA FiLES"
 
 min_delay = 8
 max_delay = 15
