@@ -16,7 +16,7 @@ string_session = os.getenv("TG_STRING_SESSION")
 source_group = '-1002051140912'
 destination_groups = ['@akdiuyebcmalkdjkdiuqagbfd']
 
-channel = "⚡️Excel Sheet 15"
+channel = "Lossless Community ❤️🔥"
 
 min_delay = 8
 max_delay = 15
