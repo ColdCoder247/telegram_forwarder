@@ -36,6 +36,7 @@ scripts = [
     "!! From laptop/⚡️MK Original  Copyright/MKOriginalCopyright.py",
     "!! From laptop/𝐑𝐉 𝐌𝐨𝐯𝐢𝐞 & 𝐒𝐞𝐫𝐢𝐞𝐬 𝐒𝐭𝐮𝐝𝐢𝐨/𝐑𝐉𝐌𝐨𝐯𝐢𝐞𝐒𝐞𝐫𝐢𝐞𝐬𝐒𝐭𝐮𝐝𝐢𝐨.py",
     "!! From laptop/𝙿𝚒𝚁𝙰𝙲𝚈 𝚁𝚊𝙲𝚔𝚎𝚃 V6/piracy.py",
+    "With All/Lossless Community ❤️🔥/Lossless Community ❤️🔥.py",
 ]
 
 # ================= TELEGRAM =================
