@@ -17,23 +17,25 @@ BOT_TOKEN = os.getenv("TG_BOT_TOKEN")
 CHAT_ID = os.getenv("TG_CHAT_ID")
 
 scripts = [
-    "!! From laptop/𝙿𝚒𝚁𝙰𝙲𝚈 𝚁𝚊𝙲𝚔𝚎𝚃 V6/piracy.py",
     "!! From laptop/All In ONE ~ TG Files/allinone.py",
-    "!! From laptop/Moonknight  Drama/moonknightdrama.py",
+    "!! From laptop/BETA FiLES/BETA FiLES.py",
+    "!! From laptop/BoB Movies/BoB Movies.py",
+   #"!! From laptop/Dany Cinema/Dany Cinema.py",
+   #"!! From laptop/FilmXHeaven Uploads/FilmXHeaven Uploads.py",
     "!! From laptop/Hindi FHD Collections/Hindi FHD Collections.py",
     "!! From laptop/Hindi FHD Movies/Hindi FHD Movies.py",
     "!! From laptop/Hindi FHD Series/Hindi FHD Series.py",
-    "!! From laptop/Limited Edition Req Files/Limited Edition Req Files.py",
-    "!! From laptop/moonknight movies/moonmovies.py",
-    "!! From laptop/moonknight series/moonseries.py",
-    "!! From laptop/𝐑𝐉 𝐌𝐨𝐯𝐢𝐞 & 𝐒𝐞𝐫𝐢𝐞𝐬 𝐒𝐭𝐮𝐝𝐢𝐨/𝐑𝐉𝐌𝐨𝐯𝐢𝐞𝐒𝐞𝐫𝐢𝐞𝐬𝐒𝐭𝐮𝐝𝐢𝐨.py",
-    "!! From laptop/BoB Movies/BoB Movies.py",
-    "!! From laptop/⚡️MK Original  Copyright/MKOriginalCopyright.py",
-    "!! From laptop/LIMITED EDITION 3.0/LimitedEdition3.py",
-    "!! From laptop/BETA FiLES/BETA FiLES.py",
     "!! From laptop/KiNG ~ SuxClub/KiNG ~ SuxClub.py",
+    "!! From laptop/LIMITED EDITION 3.0/LimitedEdition3.py",
+    "!! From laptop/Limited Edition Req Files/Limited Edition Req Files.py",
+    "!! From laptop/Moonknight  Drama/moonknightdrama.py",
     "!! From laptop/NETFLIX  Mu - Original/NETFLIX  Mu - Original.py",
     "!! From laptop/PPKM0ViEs/PPKM0ViEs.py",
+    "!! From laptop/moonknight movies/moonmovies.py",
+    "!! From laptop/moonknight series/moonseries.py",
+    "!! From laptop/⚡️MK Original  Copyright/MKOriginalCopyright.py",
+    "!! From laptop/𝐑𝐉 𝐌𝐨𝐯𝐢𝐞 & 𝐒𝐞𝐫𝐢𝐞𝐬 𝐒𝐭𝐮𝐝𝐢𝐨/𝐑𝐉𝐌𝐨𝐯𝐢𝐞𝐒𝐞𝐫𝐢𝐞𝐬𝐒𝐭𝐮𝐝𝐢𝐨.py",
+    "!! From laptop/𝙿𝚒𝚁𝙰𝙲𝚈 𝚁𝚊𝙲𝚔𝚎𝚃 V6/piracy.py",
 ]
 
 # ================= TELEGRAM =================
