@@ -434,3 +434,21 @@
 [2026-04-04 21:29:48.809230] Forwarded 472
 [2026-04-04 21:30:03.568526] Forwarded 473
 [2026-04-04 21:30:16.941984] Forwarded 474
+[2026-04-04 21:30:27.237366] Error: Cannot use <telethon.tl.types.MessageMediaWebPage object at 0x7f47d4dd2ce0> as file
+[2026-04-04 21:30:39.575361] Forwarded 476
+[2026-04-04 21:30:54.591005] Forwarded 477
+[2026-04-04 21:31:06.429028] Forwarded 478
+[2026-04-04 21:31:21.638322] Forwarded 479
+[2026-04-04 21:31:35.634359] Forwarded 480
+[2026-04-04 21:31:48.371183] Error: Cannot use <telethon.tl.types.MessageMediaWebPage object at 0x7f47d4dd0670> as file
+[2026-04-04 21:31:57.901815] Forwarded 483
+[2026-04-04 21:32:08.401421] Forwarded 484
+[2026-04-04 21:32:19.951274] Forwarded 485
+[2026-04-04 21:32:34.491336] Forwarded 486
+[2026-04-04 21:32:47.564271] Forwarded 487
+[2026-04-04 21:32:59.511924] Forwarded 488
+[2026-04-04 21:33:10.605176] Forwarded 489
+[2026-04-04 21:33:24.490447] Error: Cannot use <telethon.tl.types.MessageMediaWebPage object at 0x7f47d4ddd6c0> as file
+[2026-04-04 21:33:38.510713] Forwarded 491
+[2026-04-04 21:33:49.202917] Forwarded 492
+[2026-04-04 21:34:01.725656] Forwarded 493
