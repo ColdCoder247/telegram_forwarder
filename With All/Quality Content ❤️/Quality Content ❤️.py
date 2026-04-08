@@ -14,7 +14,7 @@ api_hash = os.getenv("TG_API_HASH")
 string_session = os.getenv("TG_STRING_SESSION")
 
 source_group = '-1003508688090'
-destination_groups = ['@sajkgfoyetufbxzjbadsijfgiyegIAC']
+destination_groups = ['@JK_HDSGIJ_HPUHSA_mfdgsdgjkhiuahs']
 
 channel = "Quality Content ❤️"
 
