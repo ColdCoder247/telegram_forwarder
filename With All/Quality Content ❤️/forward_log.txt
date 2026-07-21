@@ -1276,3 +1276,6 @@
 [2026-07-21 04:16:21.605158] Error: Cannot use <telethon.tl.types.MessageMediaWebPage object at 0x7fddcc124af0> as file
 [2026-07-21 11:01:00.214845] Forwarded 1766
 [2026-07-21 11:01:12.107444] Forwarded 1767
+[2026-07-21 18:13:34.136285] Forwarded 1769
+[2026-07-21 18:13:42.390107] Forwarded 1770
+[2026-07-21 18:13:50.579076] Error: Cannot use <telethon.tl.types.MessageMediaWebPage object at 0x7fab3f8d7c10> as file
