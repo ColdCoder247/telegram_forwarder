@@ -1,40 +1,92 @@
+```python
 import asyncio
 import os
 import random
 import subprocess
+from datetime import datetime
 
 from telethon import TelegramClient, errors
 from telethon.sessions import StringSession
 
-from hashlib import md5
-from datetime import datetime
 
-# ================= CONFIG =================
+# ============================================================
+# CONFIG
+# ============================================================
 
 api_id = int(os.getenv("TG_API_ID"))
 api_hash = os.getenv("TG_API_HASH")
 string_session = os.getenv("TG_STRING_SESSION")
 
-source_group = '-1002051140912'
+source_group = "-1002051140912"
 
 destination_groups = [
-    '@akdiuyebcmalkdjkdiuqagbfd'
+    "@akdiuyebcmalkdjkdiuqagbfd"
 ]
 
 channel = "Lossless Community ❤️🔥"
 
+# Delay between sending files
 min_delay = 8
 max_delay = 15
 
+# Long pause after this many successfully copied audio files
 pause_every = 35
 pause_time = 300
 
-hashes_file = "forwarded_hashes.txt"
+# Progress files
+processed_file = "forwarded_hashes.txt"
 log_file = "forward_log.txt"
 duplicates_file = "duplicates_log.txt"
 resume_file = "last_message_id.txt"
 
-forwarded_hashes = set()
+
+# ============================================================
+# SUPPORTED AUDIO FORMATS
+# ============================================================
+
+# Lossless formats:
+# FLAC  - Free Lossless Audio Codec
+# ALAC  - Apple Lossless
+# WAV   - PCM/WAVE
+# AIFF  - Apple/Audio Interchange File Format
+# APE   - Monkey's Audio
+# WV    - WavPack
+# TTA   - True Audio
+#
+# Common compressed audio:
+# MP3
+# M4A   - may contain ALAC or AAC
+# AAC
+# OGG
+# OPUS
+# WMA
+#
+# Note:
+# M4A is a container and can contain either ALAC (lossless)
+# or AAC (lossy), so it is included intentionally.
+
+SUPPORTED_AUDIO_EXTENSIONS = {
+    ".flac",
+    ".alac",
+    ".m4a",
+    ".mp3",
+    ".wav",
+    ".wave",
+    ".aiff",
+    ".aif",
+    ".ape",
+    ".wv",
+    ".tta",
+    ".aac",
+    ".ogg",
+    ".opus",
+    ".wma",
+}
+
+
+# ============================================================
+# TELEGRAM CLIENT
+# ============================================================
 
 client = TelegramClient(
     StringSession(string_session),
@@ -42,41 +94,187 @@ client = TelegramClient(
     api_hash
 )
 
-# ================= SAFE COMMIT =================
+
+# ============================================================
+# PROCESSED MESSAGE IDs
+# ============================================================
+
+processed_ids = set()
+
+
+def load_processed_ids():
+    """
+    Load already processed Telegram message IDs.
+    """
+
+    if not os.path.exists(processed_file):
+        return
+
+    try:
+        with open(
+            processed_file,
+            "r",
+            encoding="utf-8"
+        ) as f:
+
+            for line in f:
+
+                line = line.strip()
+
+                if line:
+                    processed_ids.add(int(line))
+
+    except Exception as e:
+
+        print("Error loading processed IDs:", e)
+
+
+def save_processed_id(message_id):
+
+    """
+    Save a successfully processed message ID.
+    """
+
+    with open(
+        processed_file,
+        "a",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(
+            f"{message_id}\n"
+        )
+
+
+# ============================================================
+# LOGGING
+# ============================================================
+
+def log(file_name, message):
+
+    with open(
+        file_name,
+        "a",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(
+            f"[{datetime.now()}] {message}\n"
+        )
+
+
+# ============================================================
+# RESUME
+# ============================================================
+
+def load_last_id():
+
+    if not os.path.exists(resume_file):
+        return 0
+
+    try:
+
+        with open(
+            resume_file,
+            "r",
+            encoding="utf-8"
+        ) as f:
+
+            value = f.read().strip()
+
+            if value:
+                return int(value)
+
+    except Exception as e:
+
+        print("Error loading last message ID:", e)
+
+    return 0
+
+
+def save_last_id(message_id):
+
+    with open(
+        resume_file,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(
+            str(message_id)
+        )
+
+
+# ============================================================
+# GIT SAFE COMMIT
+# ============================================================
 
 def safe_commit():
 
     try:
 
         subprocess.run(
-            ["git","config","--global","user.name","github-actions"]
+            [
+                "git",
+                "config",
+                "--global",
+                "user.name",
+                "github-actions"
+            ],
+            check=False
         )
 
         subprocess.run(
-            ["git","config","--global","user.email","actions@github.com"]
+            [
+                "git",
+                "config",
+                "--global",
+                "user.email",
+                "actions@github.com"
+            ],
+            check=False
         )
 
         subprocess.run(
-            ["git","add",
-             resume_file,
-             hashes_file,
-             log_file,
-             duplicates_file]
+            [
+                "git",
+                "add",
+                resume_file,
+                processed_file,
+                log_file,
+                duplicates_file
+            ],
+            check=False
         )
 
         result = subprocess.run(
-            ["git","diff","--cached","--quiet"]
+            [
+                "git",
+                "diff",
+                "--cached",
+                "--quiet"
+            ],
+            check=False
         )
 
+        # return code 1 = changes exist
         if result.returncode != 0:
 
             subprocess.run(
-                ["git","commit","-m","Auto update progress"],
+                [
+                    "git",
+                    "commit",
+                    "-m",
+                    "Auto update progress"
+                ],
                 check=True
             )
 
             subprocess.run(
-                ["git","push"],
+                [
+                    "git",
+                    "push"
+                ],
                 check=True
             )
 
@@ -88,284 +286,498 @@ def safe_commit():
 
     except Exception as e:
 
-        print("Commit error:",e)
-
-# ================= HELPERS =================
-
-def load_hashes():
-
-    if os.path.exists(hashes_file):
-
-        with open(
-                hashes_file,
-                "r",
-                encoding="utf-8"
-        ) as f:
-
-            for line in f:
-
-                forwarded_hashes.add(
-                    line.strip()
-                )
-
-def save_hash(msg_hash):
-
-    with open(
-            hashes_file,
-            "a",
-            encoding="utf-8"
-    ) as f:
-
-        f.write(
-            msg_hash+"\n"
+        print(
+            "Commit error:",
+            repr(e)
         )
 
-def log(file,msg):
 
-    with open(
-            file,
-            "a",
-            encoding="utf-8"
-    ) as f:
+# ============================================================
+# CHECK SUPPORTED AUDIO
+# ============================================================
 
-        f.write(
-            f"[{datetime.now()}] {msg}\n"
-        )
+def is_supported_audio(message):
+    """
+    Returns True if the Telegram message contains a file
+    with a supported audio extension.
+    """
 
-def hash_message(message):
+    if not message.file:
+        return False
 
-    if message.grouped_id:
+    filename = message.file.name
 
-        return f"group_{message.grouped_id}"
+    if not filename:
+        return False
 
-    if message.text:
+    filename = filename.lower()
 
-        return md5(
-            message.text.encode(
-                "utf-8"
-            )
-        ).hexdigest()
+    return any(
+        filename.endswith(extension)
+        for extension in SUPPORTED_AUDIO_EXTENSIONS
+    )
 
-    if message.media:
 
-        return f"{message.id}"
+# ============================================================
+# GET AUDIO TYPE
+# ============================================================
 
-    return None
+def get_audio_extension(message):
 
-def load_last_id():
+    if not message.file or not message.file.name:
+        return "unknown"
 
-    if os.path.exists(
-            resume_file
-    ):
+    filename = message.file.name.lower()
 
-        with open(
-                resume_file,
-                "r"
-        ) as f:
+    for extension in SUPPORTED_AUDIO_EXTENSIONS:
 
-            return int(
-                f.read().strip()
-            )
+        if filename.endswith(extension):
+            return extension
 
-    return 0
+    return "unknown"
 
-def save_last_id(msg_id):
 
-    with open(
-            resume_file,
-            "w"
-    ) as f:
+# ============================================================
+# COPY AUDIO AS NEW MESSAGE
+# ============================================================
 
-        f.write(
-            str(msg_id)
-        )
+async def copy_audio(destination, message):
 
-# ================= MAIN =================
+    """
+    Send Telegram media as a NEW message.
+
+    IMPORTANT:
+    We use send_file() instead of forward_messages().
+
+    Therefore Telegram will NOT display:
+
+        Forwarded from Lossless Community ❤️🔥
+
+    We intentionally do NOT use force_document=True so that
+    Telegram can preserve/display supported audio as audio
+    rather than forcing it into a generic document.
+    """
+
+    caption = message.text or None
+
+    await client.send_file(
+        destination,
+        message.media,
+        caption=caption
+    )
+
+
+# ============================================================
+# MAIN
+# ============================================================
 
 async def forward_history():
 
-    load_hashes()
+    load_processed_ids()
+
+    print(
+        f"Loaded {len(processed_ids)} processed message IDs"
+    )
 
     await client.start()
 
-    print("Bot started")
+    print("✅ Telegram client started")
+
+    # --------------------------------------------------------
+    # SOURCE
+    # --------------------------------------------------------
 
     source_entity = await client.get_input_entity(
         int(source_group)
     )
 
-    resolved_destinations=[]
+    # --------------------------------------------------------
+    # DESTINATIONS
+    # --------------------------------------------------------
 
-    for dest in destination_groups:
+    resolved_destinations = []
 
-        entity=await client.get_entity(
-            dest
+    for destination in destination_groups:
+
+        try:
+
+            entity = await client.get_entity(
+                destination
+            )
+
+            resolved_destinations.append(entity)
+
+            print(
+                f"✅ Destination resolved: {destination}"
+            )
+
+        except Exception as e:
+
+            print(
+                f"❌ Could not resolve destination {destination}:",
+                e
+            )
+
+    if not resolved_destinations:
+
+        print(
+            "❌ No valid destination groups."
         )
 
-        resolved_destinations.append(
-            entity
-        )
+        return
 
-    for d in resolved_destinations:
+    # --------------------------------------------------------
+    # START MESSAGE
+    # --------------------------------------------------------
 
-        await client.send_message(
-            d,
-            f"===== Started {channel}"
-        )
+    last_id = load_last_id()
 
-    last_id=load_last_id()
+    print(
+        f"▶️ Resuming from message ID: {last_id}"
+    )
 
-    forwarded_count=0
+    copied_count = 0
+    scanned_count = 0
+
+    # --------------------------------------------------------
+    # SEND START MESSAGE
+    # --------------------------------------------------------
+
+    for destination in resolved_destinations:
+
+        try:
+
+            await client.send_message(
+                destination,
+                f"===== Started {channel} ====="
+            )
+
+        except Exception as e:
+
+            print(
+                "Start message error:",
+                e
+            )
+
+    # ========================================================
+    # READ SOURCE HISTORY
+    # ========================================================
 
     async for message in client.iter_messages(
-            source_entity,
-            reverse=True,
-            min_id=last_id
+        source_entity,
+        reverse=True,
+        min_id=last_id
     ):
 
-        msg_hash=hash_message(
-            message
-        )
+        scanned_count += 1
 
-        if not msg_hash:
+        # ----------------------------------------------------
+        # ALREADY PROCESSED
+        # ----------------------------------------------------
 
-            continue
-
-        if msg_hash in forwarded_hashes:
+        if message.id in processed_ids:
 
             log(
                 duplicates_file,
-                f"duplicate {message.id}"
+                f"Already processed message {message.id}"
             )
+
+            # Move resume position forward
+            save_last_id(message.id)
 
             continue
 
-        for dest in resolved_destinations:
+        # ----------------------------------------------------
+        # NOT SUPPORTED AUDIO
+        # ----------------------------------------------------
+
+        if not is_supported_audio(message):
+
+            filename = None
+
+            if message.file:
+                filename = message.file.name
+
+            print(
+                f"⏭️ Skipping message {message.id} - "
+                f"unsupported file: {filename}"
+            )
+
+            log(
+                log_file,
+                f"Skipped message {message.id} - "
+                f"unsupported file: {filename}"
+            )
+
+            # Move resume position even for skipped messages
+            save_last_id(message.id)
+
+            continue
+
+        # ----------------------------------------------------
+        # AUDIO INFORMATION
+        # ----------------------------------------------------
+
+        filename = message.file.name
+
+        file_size = message.file.size or 0
+
+        extension = get_audio_extension(message)
+
+        print(
+            "\n🎵 Supported audio found"
+        )
+
+        print(
+            f"   Message ID : {message.id}"
+        )
+
+        print(
+            f"   Filename   : {filename}"
+        )
+
+        print(
+            f"   Format     : {extension}"
+        )
+
+        print(
+            f"   Size       : {file_size / (1024 * 1024):.2f} MB"
+        )
+
+        # ----------------------------------------------------
+        # COPY TO EVERY DESTINATION
+        # ----------------------------------------------------
+
+        message_success = True
+
+        for destination in resolved_destinations:
 
             try:
 
-                await asyncio.sleep(
-                    random.uniform(
-                        min_delay,
-                        max_delay
-                    )
+                # Random delay
+                delay = random.uniform(
+                    min_delay,
+                    max_delay
                 )
 
-                # ===================
-                # MEDIA GROUP / ALBUM
-                # ===================
+                print(
+                    f"⏳ Waiting {delay:.1f} seconds..."
+                )
 
-                if message.grouped_id:
+                await asyncio.sleep(delay)
 
-                    album=await client.get_messages(
-                        source_entity,
-                        min_id=message.id-20,
-                        max_id=message.id+20
-                    )
+                # ------------------------------------------------
+                # SEND AS NEW MESSAGE
+                # ------------------------------------------------
 
-                    album_msgs=[
-                        m for m in album
-                        if m.grouped_id==message.grouped_id
-                    ]
+                await copy_audio(
+                    destination,
+                    message
+                )
 
-                    await client.forward_messages(
-                        dest,
-                        album_msgs,
-                        source_entity
-                    )
-
-                    print(
-                        f"Album forwarded {message.grouped_id}"
-                    )
-
-                # ===================
-                # NORMAL MESSAGE
-                # ===================
-
-                else:
-
-                    await client.forward_messages(
-                        dest,
-                        message,
-                        source_entity
-                    )
-
-                    print(
-                        f"Forwarded {message.id}"
-                    )
-
-                forwarded_count+=1
+                print(
+                    f"✅ Copied as NEW message: {filename}"
+                )
 
                 log(
                     log_file,
-                    f"forwarded {message.id}"
+                    f"Copied NEW AUDIO "
+                    f"{message.id} - "
+                    f"{filename}"
                 )
-
-                save_last_id(
-                    message.id
-                )
-
-                if forwarded_count%15==0:
-
-                    safe_commit()
 
             except errors.FloodWaitError as e:
 
                 print(
-                    "Flood wait",
-                    e.seconds
+                    f"⚠️ Telegram FloodWait: "
+                    f"{e.seconds} seconds"
+                )
+
+                log(
+                    log_file,
+                    f"FloodWait {e.seconds}s "
+                    f"on message {message.id}"
                 )
 
                 await asyncio.sleep(
-                    e.seconds+5
+                    e.seconds + 5
                 )
 
-            except Exception as e:
+                # Retry once after FloodWait
+                try:
+
+                    await copy_audio(
+                        destination,
+                        message
+                    )
+
+                    print(
+                        f"✅ Retry successful: {filename}"
+                    )
+
+                except Exception as retry_error:
+
+                    print(
+                        "❌ Retry failed:",
+                        retry_error
+                    )
+
+                    log(
+                        log_file,
+                        f"Retry failed for "
+                        f"{message.id}: "
+                        f"{retry_error}"
+                    )
+
+                    message_success = False
+
+            except errors.RPCError as e:
 
                 print(
-                    "Error",
+                    f"❌ Telegram error for {filename}:",
                     e
                 )
 
                 log(
                     log_file,
-                    str(e)
+                    f"Telegram error "
+                    f"{message.id}: {e}"
                 )
 
-        forwarded_hashes.add(
-            msg_hash
-        )
+                message_success = False
 
-        save_hash(
-            msg_hash
-        )
+            except Exception as e:
 
-        if forwarded_count!=0 and \
-           forwarded_count%pause_every==0:
+                print(
+                    f"❌ Error copying {filename}:",
+                    e
+                )
+
+                log(
+                    log_file,
+                    f"Error copying "
+                    f"{message.id} "
+                    f"{filename}: {e}"
+                )
+
+                message_success = False
+
+        # ----------------------------------------------------
+        # ONLY MARK COMPLETE IF ALL DESTINATIONS SUCCEEDED
+        # ----------------------------------------------------
+
+        if message_success:
+
+            copied_count += 1
+
+            processed_ids.add(
+                message.id
+            )
+
+            save_processed_id(
+                message.id
+            )
+
+            save_last_id(
+                message.id
+            )
 
             print(
-                "Pausing..."
+                f"💾 Progress saved: {message.id}"
             )
 
-            await asyncio.sleep(
-                pause_time
+            # ------------------------------------------------
+            # PERIODIC GIT COMMIT
+            # ------------------------------------------------
+
+            if copied_count % 15 == 0:
+
+                print(
+                    "💾 Performing periodic Git commit..."
+                )
+
+                safe_commit()
+
+            # ------------------------------------------------
+            # LONG PAUSE
+            # ------------------------------------------------
+
+            if copied_count % pause_every == 0:
+
+                print(
+                    f"\n⏸️ {copied_count} audio files copied."
+                )
+
+                print(
+                    f"⏸️ Pausing for {pause_time} seconds..."
+                )
+
+                await asyncio.sleep(
+                    pause_time
+                )
+
+                print(
+                    "▶️ Resuming..."
+                )
+
+        else:
+
+            print(
+                f"⚠️ Message {message.id} was NOT marked complete."
             )
 
-    for d in resolved_destinations:
+            print(
+                "It will be retried on the next run."
+            )
 
-        await client.send_message(
-            d,
-            f"Till Now Done {channel}"
-        )
+    # ========================================================
+    # FINISHED
+    # ========================================================
 
+    for destination in resolved_destinations:
+
+        try:
+
+            await client.send_message(
+                destination,
+                f"===== Till Now Done {channel} =====\n"
+                f"Audio files copied: {copied_count}"
+            )
+
+        except Exception as e:
+
+            print(
+                "Finish message error:",
+                e
+            )
+
+    # Final Git commit
     safe_commit()
 
     print(
-        "Finished",
-        forwarded_count
+        "\n========================================"
     )
 
-# ================= RUN =================
+    print(
+        "✅ Finished"
+    )
+
+    print(
+        f"📂 Messages scanned : {scanned_count}"
+    )
+
+    print(
+        f"🎵 Audio copied     : {copied_count}"
+    )
+
+    print(
+        "========================================"
+    )
+
+
+# ============================================================
+# RUN
+# ============================================================
 
 try:
 
@@ -376,5 +788,17 @@ try:
 except KeyboardInterrupt:
 
     print(
-        "Stopped"
+        "\n🛑 Stopped by user"
     )
+
+    safe_commit()
+
+except Exception as e:
+
+    print(
+        "\n❌ Fatal error:",
+        repr(e)
+    )
+
+    safe_commit()
+```
