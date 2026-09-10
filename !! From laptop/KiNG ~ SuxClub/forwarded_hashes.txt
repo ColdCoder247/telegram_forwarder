@@ -274,3 +274,5 @@ MessageMediaDocument_893
 4d12cb825f0a9310c194b01ec607e097
 dc35db1843fdd33db6fe459e234fbba9
 bdee6b5539cde5f2d55ef454560ff83c
+MessageMediaDocument_923
+MessageMediaDocument_924
